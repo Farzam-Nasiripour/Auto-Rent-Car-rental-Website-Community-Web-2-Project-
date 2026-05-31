@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Estedad-Black";
+  src: url(../public/Fonts/Estedad-Black.ttf) format(ttf);
+}
+@font-face {
+  font-family: "Estedad-Bold";
+  src: url(../public/Fonts/Estedad-Bold.ttf) format(ttf);
+}
+@font-face {
+  font-family: "Estedad-ExtraBold";
+  src: url(../public/Fonts/Estedad-ExtraBold.ttf) format(ttf);
+}
+@font-face {
+  font-family: "Estedad-ExtraLight";
+  src: url(../public/Fonts/Estedad-ExtraLight.ttf) format(ttf);
+}
+@font-face {
+  font-family: "Estedad-Light";
+  src: url(../public/Fonts/Estedad-Light.ttf) format(ttf);
+}
+@font-face {
+  font-family: "Estedad-Medium";
+  src: url(../public/Fonts/Estedad-Medium.ttf) format(ttf);
+}
+@font-face {
+  font-family: "Estedad-Regular";
+  src: url(../public/Fonts/Estedad-Regular.ttf) format(ttf);
+}
+@font-face {
+  font-family: "Estedad-SemiBold";
+  src: url(../public/Fonts/Estedad-SemiBold.ttf) format(ttf);
+}
+@font-face {
+  font-family: "Estedad-Thin";
+  src: url(../public/Fonts/Estedad-Thin.ttf) format(ttf);
+}
