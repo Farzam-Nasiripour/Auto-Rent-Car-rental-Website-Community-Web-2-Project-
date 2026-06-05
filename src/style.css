@@ -1,3 +1,68 @@
+/* -----------imports----------- */
 @import "tailwindcss";
+@import "./Fonts.module.css";
 @source "../node_modules/preline/dist/*.js";
 @import "../node_modules/preline/variants.css";
+/* @preline/select */
+@source "../node_modules/@preline/select/*.js";
+@import "../node_modules/@preline/select/variants.css";
+@import "../node_modules/@preline/select/theme.css";
+/* ----------------------------- */
+
+@layer base {
+  body {
+    @apply bg-body/5;
+    @apply font-Estedad-Regular;
+  }
+}
+
+@theme {
+  --color-body: #c33032;
+  --color-primary: #194bf0;
+  --color-secondary: #fdb713;
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+  .flex-evenly {
+    @apply flex items-center justify-evenly;
+  }
+}
+
+@layer components {
+}
+/* Fonts */
+@theme {
+  --font-Estedad-Black: "Estedad-Black";
+  --font-Estedad-Bold: "Estedad-Bold";
+  --font-Estedad-ExtraBold: "Estedad-ExtraBold";
+  --font-Estedad-ExtraLight: "Estedad-ExtraLight";
+  --font-Estedad-Light: "Estedad-Light";
+  --font-Estedad-Medium: "Estedad-Medium";
+  --font-Estedad-Regular: "Estedad-Regular";
+  --font-Estedad-SemiBold: "Estedad-SemiBold";
+  --font-Estedad-Thin: "Estedad-Thin";
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(62.5rem);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+

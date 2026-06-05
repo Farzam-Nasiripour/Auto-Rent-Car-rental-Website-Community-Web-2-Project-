@@ -13,6 +13,7 @@
     "vite": "^8.0.12"
   },
   "dependencies": {
+    "@preline/select": "^4.2.0",
     "@tailwindcss/vite": "^4.3.0",
     "preline": "^4.2.0",
     "swiper": "^12.2.0",
