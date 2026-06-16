@@ -33,6 +33,9 @@
   .flex-evenly {
     @apply flex items-center justify-evenly;
   }
+  .flex-end {
+    @apply flex items-end justify-end;
+  }
 }
 
 @layer components {
@@ -66,4 +69,3 @@
 .animate-marquee:hover {
   animation-play-state: paused;
 }
-
