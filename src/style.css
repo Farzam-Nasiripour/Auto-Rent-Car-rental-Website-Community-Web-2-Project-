@@ -36,6 +36,12 @@
   .flex-end {
     @apply flex items-end justify-end;
   }
+  .flex-right {
+    @apply flex items-center justify-start;
+  }
+  .flex-left {
+    @apply flex items-center justify-end;
+  }
 }
 
 @layer components {
