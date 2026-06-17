@@ -75,3 +75,27 @@
 .animate-marquee:hover {
   animation-play-state: paused;
 }
+
+@keyframes marquee-x {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(62.5rem);
+  }
+}
+@keyframes marquee-y {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(62.5rem);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track-x,
+  .marquee-track-y {
+    animation-duration: 1ms;
+    animation-iteration-count: 1;
+  }
+}
