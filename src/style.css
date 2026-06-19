@@ -81,7 +81,7 @@
       transform: translateX(0);
     }
     to {
-      transform: translateX(calc(-50% - 0.5rem));
+      transform: translateX(calc(50% - 0.5rem));
     }
   }
   @keyframes marquee-y {
@@ -89,7 +89,7 @@
       transform: translateY(0);
     }
     to {
-      transform: translateY(calc(-50% - 0.5rem));
+      transform: translateY(calc(50% - 0.5rem));
     }
 }
 @media (prefers-reduced-motion: reduce) {
