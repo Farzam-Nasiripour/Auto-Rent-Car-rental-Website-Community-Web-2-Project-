@@ -76,26 +76,57 @@
   animation-play-state: paused;
 }
 
-  @keyframes marquee-x {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(calc(50% - 0.5rem));
-    }
+@keyframes marquee-x {
+  from {
+    transform: translateX(0);
   }
-  @keyframes marquee-y {
-    from {
-      transform: translateY(0);
-    }
-    to {
-      transform: translateY(calc(50% - 0.5rem));
-    }
+  to {
+    transform: translateX(calc(50% - 0.5rem));
+  }
+}
+@keyframes marquee-y {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(50% - 0.5rem));
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   .marquee-track-x,
   .marquee-track-y {
     animation-duration: 1ms;
     animation-iteration-count: 1;
+  }
+}
+
+/* ------------------------------------Chat-Support----------------------------------- */
+
+.support-ring {
+  background: conic-gradient(
+    transparent 0deg,
+    #194bf0 70deg,
+    transparent 120deg,
+    transparent 180deg,
+    #fdb713 250deg,
+    transparent 300deg
+  );
+
+  border-radius: 9999px;
+
+  animation: spin 3s linear infinite;
+
+  filter:
+    drop-shadow(0 0 6px #194bf0)
+    drop-shadow(0 0 6px #fdb713);
+
+  /* سوراخ کردن وسط رینگ */
+  mask: radial-gradient(circle, transparent 62%, #000 68%);
+  -webkit-mask: radial-gradient(circle, transparent 62%, #000 68%);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
 }
