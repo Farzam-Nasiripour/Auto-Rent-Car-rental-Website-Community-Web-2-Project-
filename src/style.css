@@ -11,9 +11,11 @@
 /* ----------------------------- */
 
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
   body {
-    @apply bg-body/6;
-    @apply font-Estedad-Regular;
+    @apply bg-body/6 font-Estedad-Regular;
   }
 }
 
@@ -116,9 +118,7 @@
 
   animation: spin 3s linear infinite;
 
-  filter:
-    drop-shadow(0 0 6px #194bf0)
-    drop-shadow(0 0 6px #fdb713);
+  filter: drop-shadow(0 0 6px #194bf0) drop-shadow(0 0 6px #fdb713);
 
   /* سوراخ کردن وسط رینگ */
   mask: radial-gradient(circle, transparent 62%, #000 68%);
