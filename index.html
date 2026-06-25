@@ -1446,17 +1446,17 @@
 
                   <div
                     id="hs-full-screen-modal-1"
-                    class="hs-overlay [--overlay-backdrop:static] hidden size-full fixed top-0 inset-s-0 z-80 overflow-x-hidden overflow-y-auto pointer-events-none"
+                    class="hs-overlay [--overlay-backdrop:false] hidden size-full fixed top-0 inset-s-0 z-80 overflow-x-hidden overflow-y-auto pointer-events-none select-none"
                     role="dialog"
                     tabindex="-1"
                     aria-labelledby="hs-full-screen-label"
                     data-hs-overlay-keyboard="false"
                   >
                     <div
-                      class="hs-overlay-open:mt-0 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-10 opacity-0 transition-all max-w-full max-h-full h-full"
+                      class="hs-overlay-open:translate-y-0 hs-overlay-open:duration-700 -translate-y-full transition-all ease-in-out max-w-full max-h-full h-full bg-black/70 backdrop-blur-2xl"
                     >
                       <div
-                        class="flex flex-col gap-y-40 bg-black/20 backdrop-blur-2xl pointer-events-auto max-w-full max-h-full h-full"
+                        class="flex flex-col gap-y-40 pointer-events-auto max-w-full max-h-full h-full"
                       >
                         <div class="flex-left py-3 px-4">
                           <button
@@ -1540,7 +1540,7 @@
 
             <div
               id="hs-offcanvas-1"
-              class="hs-overlay hs-overlay-open:translate-x-0 hidden translate-x-full fixed top-0 inset-s-0 transition-all duration-300 transform h-full max-w-xs w-[60%] z-80 bg-overlay border-e border-overlay-line"
+              class="hs-overlay hs-overlay-open:translate-x-0 hidden translate-x-full fixed top-0 inset-s-0 transition-all duration-500 transform h-full max-w-xs w-[60%] z-80 bg-overlay border-e border-overlay-line"
               role="dialog"
               tabindex="-1"
               aria-labelledby="hs-offcanvas-1-label"
@@ -2300,7 +2300,7 @@
 
             <!-- ////////////////////////////////////// -->
 
-            <div class="w-full flex">
+            <div class="w-full flex py-2">
               <div
                 class="w-1/2 h-fit absolute top-2 right-5 flex flex-col gap-y-4"
               >
@@ -2321,7 +2321,7 @@
 
                 <!--------------------- Button Group --------------------->
 
-                <div class="w-full h-fit flex flex-col gap-y-3">
+                <div class="w-full h-fit flex flex-col gap-y-3 ">
                   <button
                     type="button"
                     class="w-fit h-8 text-nowrap py-5 px-3 inline-flex items-center gap-x-2 text-sm rounded-lg bg-secondary/90 text-black dark:bg-secondary/90 border border-transparent hover:bg-secondary focus:outline-hidden focus:bg-secondary disabled:pointer-events-none transition-colors"
@@ -2336,7 +2336,7 @@
 
                   <button
                     type="button"
-                    class="w-fit h-8 text-nowrap py-4 px-4 inline-flex items-center gap-x-3 text-sm rounded-lg bg-neutral-800 text-white dark:bg-neutral-800 border border-gray-200 dark:border-neutral-700 dark:text-white shadow-2xs hover:bg-neutral-700 dark:hover:bg-neutral-700 focus:outline-hidden focus:bg-neutral-900 dark:focus:bg-neutral-700 disabled:opacity-50 disabled:pointer-events-none transition-colors"
+                    class="w-fit h-8 text-nowrap p-5 inline-flex items-center gap-x-3 text-sm rounded-lg bg-neutral-800 text-white dark:bg-neutral-800 border border-gray-200 dark:border-neutral-700 dark:text-white shadow-2xs hover:bg-neutral-700 dark:hover:bg-neutral-700 focus:outline-hidden focus:bg-neutral-900 dark:focus:bg-neutral-700 disabled:opacity-50 disabled:pointer-events-none transition-colors"
                   >
                     <svg class="w-7" transform="rotate(90)">
                       <use href="#Chevron"></use>
@@ -2443,13 +2443,13 @@
 
                   <div
                     id="hs-full-screen-modal-2"
-                    class="hs-overlay hidden size-full pb-12 pt-15 fixed top-0 inset-s-0 z-80 overflow-x-hidden overflow-y-auto pointer-events-none"
+                    class="hs-overlay hs-overlay [--overlay-backdrop:false] hidden size-full pb-12 pt-15 fixed top-0 inset-s-0 z-80 overflow-x-hidden overflow-y-auto pointer-events-none"
                     role="dialog"
                     tabindex="-1"
                     data-hs-overlay-keyboard="false"
                   >
                     <div
-                      class="hs-overlay-open:mt-0 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-10 opacity-0 transition-all max-w-full max-h-full h-full"
+                      class="hs-overlay-open:translate-y-0 hs-overlay-open:duration-500 ease-in-out translate-y-full transition-all max-w-full max-h-full h-full"
                     >
                       <div
                         class="flex flex-col bg-white border border-transparent pointer-events-auto max-w-full max-h-full h-full"
