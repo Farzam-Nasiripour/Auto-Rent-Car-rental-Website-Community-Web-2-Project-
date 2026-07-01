@@ -1361,10 +1361,8 @@
 
     <!--------------------- header Start ------------------->
 
-    <header
-      class="container md:w-[90%] mx-auto sticky top-0 z-100 flex flex-col gap-y-5"
-    >
-      <div class="w-full h-15 relative lg:rounded-t-4xl flex-center md:gap-x-5">
+    <header class="container mx-auto sticky top-0 z-100 flex flex-col gap-y-5">
+      <div class="w-full h-fit py-3.5 relative flex-center lg:gap-x-5">
         <!--------------------- backdrop blur Start ------------------->
 
         <div
@@ -1373,9 +1371,9 @@
 
         <!--------------------- backdrop blur End ------------------->
 
-        <!--------------------- header-Mobile Start ------------------->
+        <!--------------------- header-Mobile-Tablet Start ------------------->
 
-        <div class="w-full h-12 fixed bottom-0 md:hidden">
+        <div class="w-full h-12 md:h-15 fixed bottom-0 z-60 lg:hidden">
           <!--------------------- backdrop blur Start ------------------->
 
           <div
@@ -2250,22 +2248,24 @@
           <!--------------------- Content End ------------------->
         </div>
 
-        <!--------------------- header-Mobile End ------------------->
+        <!--------------------- header-Mobile-Tablet End ------------------->
 
         <!--------------------- header-Login & Title Start ------------------->
 
-        <div class="w-full h-fit flex-between px-5 -z-5">
+        <div class="w-full h-fit flex-between px-5">
           <div class="w-fit h-fit flex-center">
             <span
-              class="text-white font-Estedad-Light text-xl lg:text-3xl xl:text-4xl"
+              class="text-white font-Estedad-Light text-xl md:text-3xl lg:text-4xl"
               >صفحه اصلی</span
             >
           </div>
           <div
-            class="w-20 h-7 flex-center rounded-tr-xl rounded-bl-xl bg-secondary contrast-130"
+            class="w-fit h-fit p-2 flex-center rounded-tr-xl rounded-bl-xl bg-secondary contrast-130"
           >
             <a href="#" class="w-full h-full flex-center">
-              <span class="font-Estedad-bold text-xs">ورود/ثبت نام</span>
+              <span class="font-Estedad-bold text-xs md:text-lg"
+                >ورود/ثبت نام</span
+              >
             </a>
           </div>
         </div>
@@ -2283,32 +2283,34 @@
     <!--------------------- Container-Main Start --------------------->
 
     <main>
-      <div class="container md:w-[90%] mx-auto relative flex flex-col gap-y-5">
+      <div class="container mx-auto relative flex flex-col gap-y-5">
         <!--------------------- Main Banner Start --------------------->
 
-        <div class="w-fit h-fit relative">
-          <div class="">
+        <div class="w-full h-fit relative">
+          <div>
             <div class="w-full">
               <img
                 src="./Picture/Banner/Banner.png"
                 alt=""
-                class="-scale-x-100 brightness-28 absolute w-full h-fit"
+                class="-scale-x-100 brightness-28 absolute w-full h-fit md:rounded-b-3xl lg:h-170 lg:object-cover lg:object-bottom"
               />
               <img
                 src="./Picture/Banner/Car-banner.png"
                 alt=""
-                class="-scale-x-100 w-full h-fit shadow-[inset_0_1px_10px_rgba(253,183,19,1)]"
+                class="-scale-x-100 w-full h-fit shadow-[inset_0_1px_10px_rgba(253,183,19,1)] md:rounded-b-3xl lg:h-170 lg:object-cover lg:object-bottom"
               />
             </div>
 
             <!-- ////////////////////////////////////// -->
 
-            <div class="w-full flex ">
+            <div class="w-full flex">
               <div
-                class="w-1/2 h-fit absolute top-2 right-5 flex flex-col gap-y-4"
+                class="w-1/2 h-full absolute top-2 right-5 md:top-5 flex flex-col gap-y-4 md:gap-y-10 lg:justify-center lg:top-0"
               >
-                <div class="w-full h-15">
-                  <p class="text-secondary font-Estedad-Bold text-2xl">
+                <div class="w-full h-fit">
+                  <p
+                    class="text-secondary font-Estedad-Bold text-2xl md:text-4xl lg:text-5xl lg:leading-17"
+                  >
                     اُتـــو رِنت؛ سریع،<br />
                     آسان و به صرفه
                   </p>
@@ -2317,19 +2319,23 @@
                 <!-- ////////////////////////////////////// -->
 
                 <div class="w-fit h-fit">
-                  <p class="text-xs text-[#F9F9F9] text-nowrap py-1">
+                  <p
+                    class="text-xs md:text-xl lg:text-2xl text-[#F9F9F9] text-nowrap py-1"
+                  >
                     سرویس دهنده رزرو خودرو در ایران در کمترین زمان ممکن!
                   </p>
                 </div>
 
                 <!--------------------- Button Group --------------------->
 
-                <div class="w-full h-fit flex flex-col gap-y-3">
+                <div
+                  class="w-full h-fit flex flex-col gap-y-3 md:gap-y-5 lg:flex-row md:gap-x-5"
+                >
                   <button
                     type="button"
-                    class="w-fit h-8 text-nowrap py-5 px-3 inline-flex items-center gap-x-2 text-sm rounded-lg bg-secondary/90 text-black dark:bg-secondary/90 border border-transparent hover:bg-secondary focus:outline-hidden focus:bg-secondary disabled:pointer-events-none transition-colors"
+                    class="Btn-Group-1 p-2 bg-secondary/90 text-black md:text-xl md:p-4 lg:text-2xl dark:bg-secondary/90 border-transparent hover:bg-secondary focus:bg-secondary"
                   >
-                    <svg class="w-7">
+                    <svg class="w-7 h-7 lg:w-10 lg:h-10">
                       <use href="#Car"></use>
                     </svg>
                     رزرو آسان خودرو
@@ -2339,9 +2345,9 @@
 
                   <button
                     type="button"
-                    class="w-fit h-8 text-nowrap p-5 inline-flex items-center gap-x-3 text-sm rounded-lg bg-neutral-800 text-white dark:bg-neutral-800 border border-gray-200 dark:border-neutral-700 dark:text-white shadow-2xs hover:bg-neutral-700 dark:hover:bg-neutral-700 focus:outline-hidden focus:bg-neutral-900 dark:focus:bg-neutral-700 disabled:opacity-50 disabled:pointer-events-none transition-colors"
+                    class="Btn-Group-1 p-1.5 bg-neutral-800 text-white md:text-xl md:p-4 lg:text-2xl dark:bg-neutral-800 border-gray-200 dark:border-neutral-700 dark:text-white shadow-2xs hover:bg-neutral-700 dark:hover:bg-neutral-700 focus:bg-neutral-900 dark:focus:bg-neutral-700"
                   >
-                    <svg class="w-7" transform="rotate(90)">
+                    <svg class="w-7 h-7 lg:w-10 lg:h-10" transform="rotate(90)">
                       <use href="#Chevron"></use>
                     </svg>
                     تماس با ما
@@ -2355,74 +2361,80 @@
 
           <!--------------------- Information Start --------------------->
 
-          <div class="w-full h-fit flex-center flex-col absolute -bottom-15">
+          <div
+            class="w-full h-fit flex-center flex-col absolute -bottom-15 md:-bottom-25 lg:-bottom-20"
+          >
             <div
-              class="w-[90%] h-fit flex-center flex-col bg-white rounded-t-md p-3"
+              class="w-[90%] h-fit flex-center flex-col bg-white rounded-t-md p-3 md:rounded-t-2xl md:gap-y-3"
             >
               <!--------------------- Category Start --------------------->
-              <div
-                class="w-full h-fit flex justify-end text-nowrap font-Estedad-SemiBold text-[0.5rem] text-primary"
-              >
-                <a
-                  href="#"
-                  class="text-[0.8em] hover:text-secondary transition-colors"
-                  >اطلاعات بیشتر در مورد رزرو خودرو</a
+              <div class="w-full h-fit flex flex-col gap-y-2">
+                <div
+                  class="w-full h-fit flex justify-end text-nowrap font-Estedad-SemiBold text-primary"
                 >
-              </div>
-              <div class="w-full h-fit flex-right">
-                <div class="w-fit">
-                  <!--------------------- Button Group --------------------->
+                  <a
+                    href="#"
+                    class="text-[0.4em] md:text-[12px] lg:text-sm hover:text-secondary transition-colors"
+                    >اطلاعات بیشتر در مورد رزرو خودرو</a
+                  >
+                </div>
+                <div class="w-full h-fit flex-right">
+                  <div class="w-fit">
+                    <!--------------------- Button Group --------------------->
 
-                  <div class="w-fit flex-center gap-x-1">
-                    <button
-                      type="button"
-                      class="p-1.5 inline-flex items-center border border-stone-300 text-[0.5rem] text-nowrap font-Estedad-SemiBold focus:z-10 border-gray-200-gray-800 hover:bg-secondary/80 focus:outline-hidden focus:bg-primary focus:border-white focus:text-white disabled:opacity-50 disabled:pointer-events-none rounded-full transition-colors"
-                    >
-                      اجاره خودرو با راننده
-                    </button>
+                    <div class="w-fit flex-center gap-x-1 md:gap-x-3">
+                      <button
+                        type="button"
+                        class="Btn-Group-2 focus:z-10 border-gray-200-gray-800 hover:bg-secondary/80 focus:outline-hidden focus:bg-primary focus:border-white focus:text-white md:text-sm md:p-2.5"
+                      >
+                        اجاره خودرو با راننده
+                      </button>
 
-                    <!-- ////////////////////////////////////// -->
+                      <!-- ////////////////////////////////////// -->
 
-                    <button
-                      type="button"
-                      class="p-1.5 inline-flex items-center border border-stone-300 text-[0.5rem] text-nowrap font-Estedad-SemiBold focus:z-10 border-gray-200-gray-800 hover:bg-secondary/80 focus:outline-hidden focus:bg-primary focus:border-white focus:text-white disabled:opacity-50 disabled:pointer-events-none rounded-full transition-colors"
-                    >
-                      اجاره خودرو بی راننده
-                    </button>
+                      <button
+                        type="button"
+                        class="Btn-Group-2 focus:z-10 border-gray-200-gray-800 hover:bg-secondary/80 focus:outline-hidden focus:bg-primary focus:border-white focus:text-white md:text-sm md:p-2.5"
+                      >
+                        اجاره خودرو بی راننده
+                      </button>
 
-                    <!-- ////////////////////////////////////// -->
+                      <!-- ////////////////////////////////////// -->
 
-                    <button
-                      type="button"
-                      class="p-1.5 inline-flex items-center border border-stone-300 text-[0.5rem] text-nowrap font-Estedad-SemiBold focus:z-10 border-gray-200-gray-800 hover:bg-secondary/80 focus:outline-hidden focus:bg-primary focus:border-white focus:text-white disabled:opacity-50 disabled:pointer-events-none rounded-full transition-colors"
-                    >
-                      اجاره ماشین عروس
-                    </button>
+                      <button
+                        type="button"
+                        class="Btn-Group-2 focus:z-10 border-gray-200-gray-800 hover:bg-secondary/80 focus:outline-hidden focus:bg-primary focus:border-white focus:text-white md:text-sm md:p-2.5"
+                      >
+                        اجاره ماشین عروس
+                      </button>
+                    </div>
+
+                    <!--------------------- End Button Group --------------------->
                   </div>
-
-                  <!--------------------- End Button Group --------------------->
                 </div>
               </div>
 
               <!--------------------- Category End --------------------->
 
               <div class="w-full h-fit flex-between">
-                <div class="w-2/3 h-5 flex-between gap-x-5">
-                  <div class="w-1/3 h-5 flex items-center gap-x-1 text-nowrap">
-                    <svg class="w-5 h-5">
+                <div class="w-fit h-fit flex-between gap-x-5">
+                  <div
+                    class="w-fit h-fit flex items-center gap-x-1 text-nowrap"
+                  >
+                    <svg class="w-5 h-5 lg:w-7 lg:h-7">
                       <use href="#Location"></use>
                     </svg>
                     <a
                       href="#"
-                      class="text-[0.5rem] hover:text-secondary/80 transition-colors"
+                      class="text-[0.5rem] md:text-lg hover:text-secondary/80 transition-colors"
                       >محل تحویل خودرو</a
                     >
                   </div>
-                  <div class="w-2/3 h-5 flex-between gap-x-6">
-                    <address class="text-[0.5rem]">
+                  <div class="w-fit h-5 flex-between gap-x-6 md:gap-x-10">
+                    <address class="text-[0.5rem] md:text-lg">
                       تهران-فرودگاه امام خمینی
                     </address>
-                    <svg class="w-2.5 h-5">
+                    <svg class="w-2.5 h-5 md:w-5 lg:w-7 lg:h-7">
                       <use href="#Chevron"></use>
                     </svg>
                   </div>
@@ -2430,23 +2442,23 @@
 
                 <!--------------------- Modal Start --------------------->
 
-                <div class="w-1/3 flex justify-end">
+                <div class="w-fit flex justify-end select-none">
                   <button
                     type="button"
-                    class="w-fit h-8 text-nowrap py-4 px-2 flex-center gap-x-2 text-sm rounded-lg border border-stone-300 bg-stone-400 focus:outline-hidden disabled:pointer-events-none disabled:opacity-50"
+                    class="w-fit h-fit text-nowrap p-2 md:p-3 flex-center gap-x-2 text-sm rounded-lg border border-stone-300 bg-stone-400 focus:outline-hidden disabled:pointer-events-none disabled:opacity-50"
                     aria-haspopup="dialog"
                     aria-expanded="false"
                     aria-controls="hs-full-screen-modal-2"
                     data-hs-overlay="#hs-full-screen-modal-2"
                   >
-                    <svg class="w-5 h-5">
+                    <svg class="w-5 h-5 md:w-7 md:h-7">
                       <use href="#Search"></use>
                     </svg>
                   </button>
 
                   <div
                     id="hs-full-screen-modal-2"
-                    class="hs-overlay hs-overlay [--overlay-backdrop:false] hidden size-full pb-12 pt-15 fixed top-0 inset-s-0 z-80 overflow-x-hidden overflow-y-auto pointer-events-none"
+                    class="hs-overlay hs-overlay [--overlay-backdrop:false] hidden size-full pb-12 pt-15 lg:p-0 fixed top-0 inset-s-0 z-101 overflow-x-hidden overflow-y-auto pointer-events-none"
                     role="dialog"
                     tabindex="-1"
                     data-hs-overlay-keyboard="false"
@@ -2458,11 +2470,11 @@
                         class="flex flex-col bg-white border border-transparent pointer-events-auto max-w-full max-h-full h-full"
                       >
                         <div
-                          class="flex-between py-3 px-2 border-b border-gray-200"
+                          class="flex-between py-3 px-2 md:p-6 border-b border-gray-200"
                         >
                           <!--------------------- Select --------------------->
 
-                          <div class="w-1/2">
+                          <div class="w-1/2 h-fit">
                             <select
                               id="hs-multiple-optgroup"
                               multiple
@@ -2523,7 +2535,7 @@
 
                           <button
                             type="button"
-                            class="size-8 inline-flex justify-center items-center gap-x-2 rounded-full bg-gray-100 border border-transparent text-gray-800 hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none"
+                            class="size-8 md:size-10 inline-flex justify-center items-center gap-x-2 rounded-full bg-gray-100 border border-transparent text-gray-800 hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none"
                             aria-label="Close"
                             data-hs-overlay="#hs-full-screen-modal-2"
                           >
@@ -2532,7 +2544,7 @@
                             <!--------------------- SVG --------------------->
 
                             <svg
-                              class="shrink-0 size-4"
+                              class="shrink-0 size-4 md:size-5"
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"
                               height="24"
@@ -2557,63 +2569,75 @@
                             <!-- ////////////////////////////////////// -->
 
                             <div class="w-full h-fit flex">
-                              <ul class="w-full flex-center gap-x-4">
-                                <!-- ////////////////////////////////////// -->
+                              <ul class="w-full grid grid-cols-4 p-2 md:py-5">
+                                <!--------------------- item-1 --------------------->
 
                                 <li
-                                  class="w-20 h-10 flex-center gap-x-1 text-nowrap"
+                                  class="w-full h-fit flex-center gap-x-1 text-nowrap"
                                 >
-                                  <svg class="w-3" transform="rotate(90)">
+                                  <svg
+                                    class="w-3 h-3 md:w-6 md:h-7"
+                                    transform="rotate(90)"
+                                  >
                                     <use href="#Chevron-2"></use>
                                   </svg>
                                   <a
                                     href="#"
-                                    class="text-xs hover:text-secondary/80 transition-colors"
+                                    class="text-xs md:text-xl hover:text-secondary/80 transition-colors"
                                     >تاریخ تحویل</a
                                   >
                                 </li>
 
-                                <!-- ////////////////////////////////////// -->
+                                <!--------------------- item-2 --------------------->
 
                                 <li
-                                  class="w-20 h-10 flex-center gap-x-1 text-nowrap"
+                                  class="w-full h-fit flex-center gap-x-1 text-nowrap"
                                 >
-                                  <svg class="w-3" transform="rotate(90)">
+                                  <svg
+                                    class="w-3 h-3 md:w-6 md:h-7"
+                                    transform="rotate(90)"
+                                  >
                                     <use href="#Chevron-2"></use>
                                   </svg>
                                   <a
                                     href="#"
-                                    class="text-xs hover:text-secondary/80 transition-colors"
+                                    class="text-xs md:text-xl hover:text-secondary/80 transition-colors"
                                     >ساعت تحویل</a
                                   >
                                 </li>
 
-                                <!-- ////////////////////////////////////// -->
+                                <!--------------------- item-3 --------------------->
 
                                 <li
-                                  class="w-20 h-10 flex-center gap-x-1 text-nowrap"
+                                  class="w-full h-fit flex-center gap-x-1 text-nowrap"
                                 >
-                                  <svg class="w-3" transform="rotate(90)">
+                                  <svg
+                                    class="w-3 h-3 md:w-6 md:h-7"
+                                    transform="rotate(90)"
+                                  >
                                     <use href="#Chevron-2"></use>
                                   </svg>
                                   <a
                                     href="#"
-                                    class="text-xs hover:text-secondary/80 transition-colors"
+                                    class="text-xs md:text-xl hover:text-secondary/80 transition-colors"
                                     >تاریخ بازگشت</a
                                   >
                                 </li>
 
-                                <!-- ////////////////////////////////////// -->
+                                <!--------------------- item-4 --------------------->
 
                                 <li
-                                  class="w-23 h-10 flex-center gap-x-1 text-nowrap"
+                                  class="w-full h-fit flex-center gap-x-1 text-nowrap"
                                 >
-                                  <svg class="w-3" transform="rotate(90)">
+                                  <svg
+                                    class="w-3 h-3 md:w-6 md:h-6"
+                                    transform="rotate(90)"
+                                  >
                                     <use href="#Chevron-2"></use>
                                   </svg>
                                   <a
                                     href="#"
-                                    class="text-xs hover:text-secondary/80 transition-colors"
+                                    class="text-xs md:text-xl hover:text-secondary/80 transition-colors"
                                     >ساعت بازگشت</a
                                   >
                                 </li>
@@ -2626,48 +2650,48 @@
                           <!--------------------- Address Start --------------------->
 
                           <div class="w-full h-fit flex-center gap-x-1 p-1">
-                            <div class="w-2/3 h-fit flex-center">
-                              <ul class="flex gap-x-4">
-                                <!-- ////////////////////////////////////// -->
+                            <div class="w-full h-fit flex-center">
+                              <ul class="w-full h-fit grid grid-cols-4 px-2">
+                                <!--------------------- item-1 --------------------->
 
                                 <li
-                                  class="w-20 h-5 flex-center gap-x-1 text-nowrap font-Estedad-Medium text-xs"
+                                  class="w-full h-fit flex-center gap-x-1 text-nowrap font-Estedad-Medium text-xs"
                                 >
-                                  <span>۱۴۰۳/۱۰/۰۲</span>
-                                  <svg class="w-4">
+                                  <span class="md:text-xl">۱۴۰۳/۱۰/۰۲</span>
+                                  <svg class="w-4 h-4 md:w-8 md:h-8">
                                     <use href="#Calendar"></use>
                                   </svg>
                                 </li>
 
-                                <!-- ////////////////////////////////////// -->
+                                <!--------------------- item-2 --------------------->
 
                                 <li
-                                  class="w-20 h-5 flex-center gap-x-1 text-nowrap font-Estedad-Medium text-xs"
+                                  class="w-full h-fit flex-center gap-x-1 text-nowrap font-Estedad-Medium text-xs"
                                 >
-                                  <time>۰۷:۰۰</time>
-                                  <svg class="w-4">
+                                  <time class="md:text-xl">۰۷:۰۰</time>
+                                  <svg class="w-4 h-4 md:w-8 md:h-8">
                                     <use href="#Clock"></use>
                                   </svg>
                                 </li>
 
-                                <!-- ////////////////////////////////////// -->
+                                <!--------------------- item-3 --------------------->
 
                                 <li
-                                  class="w-20 h-5 flex-center gap-x-1 text-nowrap font-Estedad-Medium text-xs"
+                                  class="w-full h-fit flex-center gap-x-1 text-nowrap font-Estedad-Medium text-xs"
                                 >
-                                  <span>۱۴۰۳/۱۰/۰۲</span>
-                                  <svg class="w-4">
+                                  <span class="md:text-xl">۱۴۰۳/۱۰/۰۲</span>
+                                  <svg class="w-4 h-4 md:w-8 md:h-8">
                                     <use href="#Calendar"></use>
                                   </svg>
                                 </li>
 
-                                <!-- ////////////////////////////////////// -->
+                                <!--------------------- item-4 --------------------->
 
                                 <li
-                                  class="w-20 h-5 flex-center gap-x-1 text-nowrap font-Estedad-Medium text-xs"
+                                  class="w-full h-fit flex-center gap-x-1 text-nowrap font-Estedad-Medium text-xs"
                                 >
-                                  <time>۰۷:۰۰</time>
-                                  <svg class="w-4">
+                                  <time class="md:text-xl">۰۷:۰۰</time>
+                                  <svg class="w-4 h-4 md:w-8 md:h-8">
                                     <use href="#Clock"></use>
                                   </svg>
                                 </li>
@@ -2678,11 +2702,11 @@
                           <!--------------------- Address End--------------------->
                         </div>
                         <div
-                          class="flex justify-start items-center gap-x-2 py-3 px-4 mt-auto border-t border-gray-200"
+                          class="flex justify-start lg:justify-end items-center gap-x-2 py-3 px-4 mt-auto border-t border-gray-200"
                         >
                           <button
                             type="button"
-                            class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-Estedad-SemiBold rounded-lg bg-blue-600 border border-transparent text-white hover:bg-blue-700 focus:outline-hidden focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+                            class="py-2 px-3 md:py-3 md:px-4 md:text-xl inline-flex items-center gap-x-2 text-sm font-Estedad-SemiBold rounded-lg bg-blue-600 border border-transparent text-white hover:bg-blue-700 focus:outline-hidden focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
                           >
                             جستجو
                           </button>
@@ -2690,7 +2714,7 @@
                           <!-- ////////////////////////////////////// -->
                           <button
                             type="button"
-                            class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-Estedad-SemiBold rounded-lg bg-secondary border border-gray-200 text-gray-800 shadow-2xs hover:bg-secondary/80 focus:outline-hidden focus:bg-secondary/50 disabled:opacity-50 disabled:pointer-events-none"
+                            class="py-2 px-3 md:py-3 md:px-4 md:text-xl inline-flex items-center gap-x-2 text-sm font-Estedad-SemiBold rounded-lg bg-secondary border border-gray-200 text-gray-800 shadow-2xs hover:bg-secondary/80 focus:outline-hidden focus:bg-secondary/50 disabled:opacity-50 disabled:pointer-events-none"
                             data-hs-overlay="#hs-full-screen-modal-2"
                           >
                             بستن
@@ -2718,87 +2742,75 @@
 
       <!--------------------- Grid --------------------->
 
-      <div class="relative mt-15 overflow-hidden">
-        <div class="w-fit h-20 flex items-center animate-marquee">
+      <div class="relative mt-15 md:mt-25 overflow-hidden">
+        <div class="w-full md:pb-5 flex items-center animate-marquee">
           <!--------------------- Brands-1 --------------------->
 
-          <div class="w-fit flex items-center justify-around">
-            <div
-              class="px-4 w-25 md:w-30 h-fit flex shrink-0 justify-center items-center"
-            >
-              <img src="./Picture/Car-Logo/Benz.png" alt="" />
+          <div class="flex-around">
+            <div class="Logo-Marquee">
+              <img src="./Picture/Car-Logo/Benz.png" alt="" class="md:w-20" />
             </div>
 
             <!-- ////////////////////////////////////// -->
 
-            <div
-              class="px-4 w-25 md:w-30 h-fit flex shrink-0 justify-center items-center"
-            >
-              <img src="./Picture/Car-Logo/BMW.png" alt="" />
+            <div class="Logo-Marquee">
+              <img src="./Picture/Car-Logo/BMW.png" alt="" class="md:w-20" />
             </div>
 
             <!-- ////////////////////////////////////// -->
 
-            <div
-              class="px-4 w-25 md:w-30 h-fit flex shrink-0 justify-center items-center"
-            >
-              <img src="./Picture/Car-Logo/Honda.png" alt="" />
+            <div class="Logo-Marquee">
+              <img src="./Picture/Car-Logo/Honda.png" alt="" class="md:w-20" />
             </div>
 
             <!-- ////////////////////////////////////// -->
 
-            <div
-              class="px-4 w-25 md:w-30 h-fit flex shrink-0 justify-center items-center"
-            >
-              <img src="./Picture/Car-Logo/Huundai.png" alt="" />
+            <div class="Logo-Marquee">
+              <img
+                src="./Picture/Car-Logo/Huundai.png"
+                alt=""
+                class="md:w-20"
+              />
             </div>
 
             <!-- ////////////////////////////////////// -->
 
-            <div
-              class="px-4 w-25 md:w-30 h-fit flex shrink-0 justify-center items-center"
-            >
-              <img src="./Picture/Car-Logo/Jeep.png" alt="" />
+            <div class="Logo-Marquee">
+              <img src="./Picture/Car-Logo/Jeep.png" alt="" class="md:w-20" />
             </div>
 
             <!-- ////////////////////////////////////// -->
 
-            <div
-              class="px-4 w-25 md:w-30 h-fit flex shrink-0 justify-center items-center"
-            >
-              <img src="./Picture/Car-Logo/KIA.png" alt="" />
+            <div class="Logo-Marquee">
+              <img src="./Picture/Car-Logo/KIA.png" alt="" class="md:w-20" />
             </div>
 
             <!-- ////////////////////////////////////// -->
 
-            <div
-              class="px-4 w-25 md:w-30 h-fit flex shrink-0 justify-center items-center"
-            >
-              <img src="./Picture/Car-Logo/Land-Rover.png" alt="" />
+            <div class="Logo-Marquee">
+              <img
+                src="./Picture/Car-Logo/Land-Rover.png"
+                alt=""
+                class="md:w-20"
+              />
             </div>
 
             <!-- ////////////////////////////////////// -->
 
-            <div
-              class="px-4 w-25 md:w-30 h-fit flex shrink-0 justify-center items-center"
-            >
-              <img src="./Picture/Car-Logo/Lexus.png" alt="" />
+            <div class="Logo-Marquee">
+              <img src="./Picture/Car-Logo/Lexus.png" alt="" class="md:w-20" />
             </div>
 
             <!-- ////////////////////////////////////// -->
 
-            <div
-              class="px-4 w-25 md:w-30 h-fit flex shrink-0 justify-center items-center"
-            >
-              <img src="./Picture/Car-Logo/Nissan.png" alt="" />
+            <div class="Logo-Marquee">
+              <img src="./Picture/Car-Logo/Nissan.png" alt="" class="md:w-20" />
             </div>
 
             <!-- ////////////////////////////////////// -->
 
-            <div
-              class="px-4 w-25 md:w-30 h-fit flex shrink-0 justify-center items-center"
-            >
-              <img src="./Picture/Car-Logo/Toyota.png" alt="" />
+            <div class="Logo-Marquee">
+              <img src="./Picture/Car-Logo/Toyota.png" alt="" class="md:w-20" />
             </div>
           </div>
 
@@ -2806,87 +2818,147 @@
 
           <!--------------------- Brands-2 --------------------->
 
-          <div class="w-fit flex items-center justify-around">
-            <div
-              class="px-4 w-25 md:w-30 h-fit flex shrink-0 justify-center items-center"
-            >
-              <img src="./Picture/Car-Logo/Benz.png" alt="" />
+          <div class="flex-around">
+            <div class="Logo-Marquee">
+              <img src="./Picture/Car-Logo/Benz.png" alt="" class="md:w-20" />
             </div>
 
             <!-- ////////////////////////////////////// -->
 
-            <div
-              class="px-4 w-25 md:w-30 h-fit flex shrink-0 justify-center items-center"
-            >
-              <img src="./Picture/Car-Logo/BMW.png" alt="" />
+            <div class="Logo-Marquee">
+              <img src="./Picture/Car-Logo/BMW.png" alt="" class="md:w-20" />
             </div>
 
             <!-- ////////////////////////////////////// -->
 
-            <div
-              class="px-4 w-25 md:w-30 h-fit flex shrink-0 justify-center items-center"
-            >
-              <img src="./Picture/Car-Logo/Honda.png" alt="" />
+            <div class="Logo-Marquee">
+              <img src="./Picture/Car-Logo/Honda.png" alt="" class="md:w-20" />
             </div>
 
             <!-- ////////////////////////////////////// -->
 
-            <div
-              class="px-4 w-25 md:w-30 h-fit flex shrink-0 justify-center items-center"
-            >
-              <img src="./Picture/Car-Logo/Huundai.png" alt="" />
+            <div class="Logo-Marquee">
+              <img
+                src="./Picture/Car-Logo/Huundai.png"
+                alt=""
+                class="md:w-20"
+              />
             </div>
 
             <!-- ////////////////////////////////////// -->
 
-            <div
-              class="px-4 w-25 md:w-30 h-fit flex shrink-0 justify-center items-center"
-            >
-              <img src="./Picture/Car-Logo/Jeep.png" alt="" />
+            <div class="Logo-Marquee">
+              <img src="./Picture/Car-Logo/Jeep.png" alt="" class="md:w-20" />
             </div>
 
             <!-- ////////////////////////////////////// -->
 
-            <div
-              class="px-4 w-25 md:w-30 h-fit flex shrink-0 justify-center items-center"
-            >
-              <img src="./Picture/Car-Logo/KIA.png" alt="" />
+            <div class="Logo-Marquee">
+              <img src="./Picture/Car-Logo/KIA.png" alt="" class="md:w-20" />
             </div>
 
             <!-- ////////////////////////////////////// -->
 
-            <div
-              class="px-4 w-25 md:w-30 h-fit flex shrink-0 justify-center items-center"
-            >
-              <img src="./Picture/Car-Logo/Land-Rover.png" alt="" />
+            <div class="Logo-Marquee">
+              <img
+                src="./Picture/Car-Logo/Land-Rover.png"
+                alt=""
+                class="md:w-20"
+              />
             </div>
 
             <!-- ////////////////////////////////////// -->
 
-            <div
-              class="px-4 w-25 md:w-30 h-fit flex shrink-0 justify-center items-center"
-            >
-              <img src="./Picture/Car-Logo/Lexus.png" alt="" />
+            <div class="Logo-Marquee">
+              <img src="./Picture/Car-Logo/Lexus.png" alt="" class="md:w-20" />
             </div>
 
             <!-- ////////////////////////////////////// -->
 
-            <div
-              class="px-4 w-25 md:w-30 h-fit flex shrink-0 justify-center items-center"
-            >
-              <img src="./Picture/Car-Logo/Nissan.png" alt="" />
+            <div class="Logo-Marquee">
+              <img src="./Picture/Car-Logo/Nissan.png" alt="" class="md:w-20" />
             </div>
 
             <!-- ////////////////////////////////////// -->
 
-            <div
-              class="px-4 w-25 md:w-30 h-fit flex shrink-0 justify-center items-center"
-            >
-              <img src="./Picture/Car-Logo/Toyota.png" alt="" />
+            <div class="Logo-Marquee">
+              <img src="./Picture/Car-Logo/Toyota.png" alt="" class="md:w-20" />
             </div>
           </div>
 
           <!--------------------- End Brands-2 --------------------->
+
+          <!--------------------- Brands-3 --------------------->
+
+          <div class="hidden lg:flex lg:items-center lg:justify-around">
+            <div class="Logo-Marquee">
+              <img src="./Picture/Car-Logo/Benz.png" alt="" class="md:w-20" />
+            </div>
+
+            <!-- ////////////////////////////////////// -->
+
+            <div class="Logo-Marquee">
+              <img src="./Picture/Car-Logo/BMW.png" alt="" class="md:w-20" />
+            </div>
+
+            <!-- ////////////////////////////////////// -->
+
+            <div class="Logo-Marquee">
+              <img src="./Picture/Car-Logo/Honda.png" alt="" class="md:w-20" />
+            </div>
+
+            <!-- ////////////////////////////////////// -->
+
+            <div class="Logo-Marquee">
+              <img
+                src="./Picture/Car-Logo/Huundai.png"
+                alt=""
+                class="md:w-20"
+              />
+            </div>
+
+            <!-- ////////////////////////////////////// -->
+
+            <div class="Logo-Marquee">
+              <img src="./Picture/Car-Logo/Jeep.png" alt="" class="md:w-20" />
+            </div>
+
+            <!-- ////////////////////////////////////// -->
+
+            <div class="Logo-Marquee">
+              <img src="./Picture/Car-Logo/KIA.png" alt="" class="md:w-20" />
+            </div>
+
+            <!-- ////////////////////////////////////// -->
+
+            <div class="Logo-Marquee">
+              <img
+                src="./Picture/Car-Logo/Land-Rover.png"
+                alt=""
+                class="md:w-20"
+              />
+            </div>
+
+            <!-- ////////////////////////////////////// -->
+
+            <div class="Logo-Marquee">
+              <img src="./Picture/Car-Logo/Lexus.png" alt="" class="md:w-20" />
+            </div>
+
+            <!-- ////////////////////////////////////// -->
+
+            <div class="Logo-Marquee">
+              <img src="./Picture/Car-Logo/Nissan.png" alt="" class="md:w-20" />
+            </div>
+
+            <!-- ////////////////////////////////////// -->
+
+            <div class="Logo-Marquee">
+              <img src="./Picture/Car-Logo/Toyota.png" alt="" class="md:w-20" />
+            </div>
+          </div>
+
+          <!--------------------- End Brands-3 --------------------->
         </div>
       </div>
 
@@ -2902,23 +2974,25 @@
         <div class="w-full h-fit relative flex flex-col gap-y-5">
           <!--------------------- Text Start --------------------->
 
-          <div class="w-full h-fit">
+          <div class="w-full h-fit relative">
             <!--------------------- bg-image Start --------------------->
 
             <div
-              class="w-full h-60 flex-center bg-[url(/Picture/bg-image/bg-image-1.jpg)] bg-size-[140%] bg-center bg-no-repeat brightness-40 absolute"
+              class="w-full h-60 md:h-80 flex-center bg-[url(/Picture/bg-image/bg-image-1.jpg)] bg-size-[140%] bg-center bg-no-repeat brightness-40 absolute md:rounded-b-3xl"
             ></div>
 
             <!--------------------- bg-image End --------------------->
 
             <div
-              class="w-full h-60 relative flex-center flex-col gap-y-10 select-none shadow-[0_8px_20px_rgba(253,183,19,0.35)]"
+              class="w-full h-60 md:h-80 relative flex items-center justify-center md:rounded-b-3xl lg:justify-start lg:pt-5 flex-col gap-y-10 select-none shadow-[0_8px_20px_rgba(253,183,19,0.35)]"
             >
-              <p class="text-center text-secondary text-2xl">
+              <p class="text-center text-secondary text-2xl md:text-3xl">
                 چــــــرا اُتو رِنت؟
               </p>
 
-              <p class="w-[80%] text-center text-sm text-stone-200">
+              <p
+                class="w-[80%] text-center text-sm md:text-lg lg:w-[50%] text-stone-200"
+              >
                 اجاره خودرو از یک شرکت اجاره خودرو با سابقه به شما کمک می‌کند تا
                 در مسافرت ها، قرار ملاقات‌ های مهم، مجالس و مراسم‌های خانوادگی
                 ماشین مناسب خود را در اختیار داشته باشید. اگر شما اصلا خودرویی
@@ -2932,12 +3006,14 @@
 
           <!--------------------- Card Start --------------------->
 
-          <div class="flex flex-col gap-y-5 select-none">
+          <div
+            class="w-full flex-center flex-col gap-y-5 select-none lg:w-[80%] lg:absolute lg:flex-row lg:right-25 lg:-bottom-25 xl:right-35"
+          >
             <!--------------------- Box-1 --------------------->
 
-            <div class="w-full h-fit flex-center select-none">
+            <div class="w-full h-fit flex-center">
               <div
-                class="w-[80%] h-45 flex-evenly flex-col bg-white rounded-xl"
+                class="w-78 h-45 flex-evenly flex-col bg-white rounded-xl lg:w-[90%]"
               >
                 <!--------------------- Icon-1 --------------------->
 
@@ -2958,7 +3034,7 @@
                 <!-- ////////////////////////////////////// -->
 
                 <div class="">
-                  <p class="text-[0.8rem] text-stone-800">
+                  <p class="text-[0.8rem] text-stone-800 text-center">
                     هدف ما، ارائه بهترین خدمات با مناسب ترین قیمت ممکن است.
                   </p>
                 </div>
@@ -2969,7 +3045,7 @@
 
             <div class="w-full h-fit flex-center">
               <div
-                class="w-[80%] h-45 flex-evenly flex-col bg-white rounded-xl"
+                class="w-78 h-45 flex-evenly flex-col bg-white rounded-xl lg:w-[90%]"
               >
                 <!--------------------- Icon-2 --------------------->
 
@@ -2997,7 +3073,7 @@
                 <!-- ////////////////////////////////////// -->
 
                 <div class="">
-                  <p class="text-[0.8rem] text-stone-800">
+                  <p class="text-[0.8rem] text-stone-800 text-center">
                     کارشناسان ما در هر زمان و مکان، پاسخگوی سوالات شما خواهند
                     بود.
                   </p>
@@ -3008,7 +3084,7 @@
 
             <div class="w-full h-fit flex-center">
               <div
-                class="w-[80%] h-45 flex-evenly flex-col bg-white rounded-xl"
+                class="w-78 h-45 flex items-center justify-evenly flex-col bg-white rounded-xl lg:w-[90%]"
               >
                 <!--------------------- Icon-3 --------------------->
 
@@ -3034,7 +3110,7 @@
                 <!-- ////////////////////////////////////// -->
 
                 <div class="">
-                  <p class="text-[0.8rem] text-stone-800">
+                  <p class="text-[0.8rem] text-stone-800 text-center">
                     تحویل خودرو در زمان و مکان تعیین شده توسط شما خواهد بود.
                   </p>
                 </div>
@@ -3048,225 +3124,404 @@
         <!--------------------- About End --------------------->
 
         <!--------------------- Car-Model-List-swiper Start --------------------->
-        <!--------------------- Swiper-1 Start --------------------->
-        <div class="swiper mySwiper_1 w-60 h-80 select-none">
-          <div class="swiper-wrapper">
-            <!--------------------- Card 1 --------------------->
 
-            <div
-              class="swiper-slide relative overflow-hidden w-full flex-center rounded-xl"
-            >
-              <a href="#">
-                <div class="w-full flex-center absolute top-3 text-white">
-                  <span class="font-Estedad-Bold">اسپرت</span>
-                </div>
-                <img
-                  src="./Picture/Car-Picture/Sports Car/Mercedes-AMG GT In Deep Green-swiper-1.jpg"
-                  alt=""
-                  class="object-cover"
-                />
-                <div
-                  class="w-[80%] h-2 bg-amber-500 rounded-xl absolute -bottom-1 right-5"
-                ></div>
-              </a>
-            </div>
+        <!--------------------- Mobile-Tablet Start --------------------->
 
-            <!--------------------- Card 2 --------------------->
+        <div class="w-full h-fit lg:hidden">
+          <!--------------------- Swiper-1 Start --------------------->
 
-            <div
-              class="swiper-slide relative overflow-hidden w-full flex-center rounded-xl"
-            >
-              <a href="#">
-                <div class="w-full flex-center absolute top-3">
-                  <span class="font-Estedad-Bold">شاسی بلند</span>
-                </div>
-                <img
-                  src="./Picture/Car-Picture/SUV/SUV-swiper-1.jpg"
-                  alt=""
-                  class="w-full h-full object-cover"
-                />
-                <div
-                  class="w-[80%] h-2 bg-amber-500 rounded-xl absolute -bottom-1 right-5"
-                ></div>
-              </a>
-            </div>
+          <div class="swiper mySwiper_1 w-60 h-80 select-none">
+            <div class="swiper-wrapper">
+              <!--------------------- Card 1 --------------------->
 
-            <!--------------------- Card 3 --------------------->
+              <div
+                class="swiper-slide relative overflow-hidden w-full flex-center rounded-xl"
+              >
+                <a href="#">
+                  <div class="w-full flex-center absolute top-3 text-white">
+                    <span class="font-Estedad-Bold">اسپرت</span>
+                  </div>
+                  <img
+                    src="./Picture/Car-Picture/Sports Car/Mercedes-AMG GT In Deep Green-swiper-1.jpg"
+                    alt=""
+                    class="object-cover"
+                  />
+                  <div
+                    class="w-[80%] h-2 bg-amber-500 rounded-xl absolute -bottom-1 right-5"
+                  ></div>
+                </a>
+              </div>
 
-            <div
-              class="swiper-slide relative overflow-hidden w-full flex-center rounded-xl"
-            >
-              <a href="#">
-                <div class="w-full flex-center absolute top-3">
-                  <span class="font-Estedad-Bold">کروک</span>
-                </div>
-                <img
-                  src="./Picture/Car-Picture/Convertible/Benz Convertible-swiper-1.jpg"
-                  alt=""
-                  class="w-full h-full object-cover"
-                />
-                <div
-                  class="w-[80%] h-2 bg-amber-500 rounded-xl absolute -bottom-1 right-5"
-                ></div>
-              </a>
-            </div>
+              <!--------------------- Card 2 --------------------->
 
-            <!--------------------- Card 4 --------------------->
+              <div
+                class="swiper-slide relative overflow-hidden w-full flex-center rounded-xl"
+              >
+                <a href="#">
+                  <div class="w-full flex-center absolute top-3">
+                    <span class="font-Estedad-Bold">شاسی بلند</span>
+                  </div>
+                  <img
+                    src="./Picture/Car-Picture/SUV/SUV-swiper-1.jpg"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="w-[80%] h-2 bg-amber-500 rounded-xl absolute -bottom-1 right-5"
+                  ></div>
+                </a>
+              </div>
 
-            <div
-              class="swiper-slide relative overflow-hidden w-full flex-center rounded-xl"
-            >
-              <a href="#">
-                <div class="w-full flex-center absolute top-3">
-                  <span class="font-Estedad-Bold">کوپه</span>
-                </div>
-                <img
-                  src="./Picture/Car-Picture/coupe/Benz Coupe-swiper-1.jpg"
-                  alt=""
-                  class="w-full h-full object-cover"
-                />
-                <div
-                  class="w-[80%] h-2 bg-amber-500 rounded-xl absolute -bottom-1 right-5"
-                ></div>
-              </a>
-            </div>
+              <!--------------------- Card 3 --------------------->
 
-            <!--------------------- Card 5 --------------------->
+              <div
+                class="swiper-slide relative overflow-hidden w-full flex-center rounded-xl"
+              >
+                <a href="#">
+                  <div class="w-full flex-center absolute top-3">
+                    <span class="font-Estedad-Bold">کروک</span>
+                  </div>
+                  <img
+                    src="./Picture/Car-Picture/Convertible/Benz Convertible-swiper-1.jpg"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="w-[80%] h-2 bg-amber-500 rounded-xl absolute -bottom-1 right-5"
+                  ></div>
+                </a>
+              </div>
 
-            <div
-              class="swiper-slide relative overflow-hidden w-full flex-center rounded-xl"
-            >
-              <a href="#">
-                <div class="w-full flex-center absolute top-3 text-white">
-                  <span class="font-Estedad-Bold">هاچبک</span>
-                </div>
-                <img
-                  src="./Picture/Car-Picture/Hatchback/A250D-swiper-1.jpg"
-                  alt=""
-                  class="w-full h-full"
-                />
-                <div
-                  class="w-[80%] h-2 bg-amber-500 rounded-xl absolute -bottom-1 right-5"
-                ></div>
-              </a>
-            </div>
+              <!--------------------- Card 4 --------------------->
 
-            <!--------------------- Card 6 --------------------->
+              <div
+                class="swiper-slide relative overflow-hidden w-full flex-center rounded-xl"
+              >
+                <a href="#">
+                  <div class="w-full flex-center absolute top-3">
+                    <span class="font-Estedad-Bold">کوپه</span>
+                  </div>
+                  <img
+                    src="./Picture/Car-Picture/coupe/Benz Coupe-swiper-1.jpg"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="w-[80%] h-2 bg-amber-500 rounded-xl absolute -bottom-1 right-5"
+                  ></div>
+                </a>
+              </div>
 
-            <div
-              class="swiper-slide relative overflow-hidden w-full flex-center rounded-xl"
-            >
-              <a href="#">
-                <div class="w-full flex-center absolute top-3 text-white">
-                  <span class="font-Estedad-Bold">سوپراسپرت</span>
-                </div>
-                <img
-                  src="./Picture/Car-Picture/Hypercar/Mercedes-AMG One-swiper-1.jpg"
-                  alt=""
-                  class="w-full h-full"
-                />
-                <div
-                  class="w-[80%] h-2 bg-amber-500 rounded-xl absolute -bottom-1 right-5"
-                ></div>
-              </a>
-            </div>
+              <!--------------------- Card 5 --------------------->
 
-            <!--------------------- Card 7 --------------------->
+              <div
+                class="swiper-slide relative overflow-hidden w-full flex-center rounded-xl"
+              >
+                <a href="#">
+                  <div class="w-full flex-center absolute top-3 text-white">
+                    <span class="font-Estedad-Bold">هاچبک</span>
+                  </div>
+                  <img
+                    src="./Picture/Car-Picture/Hatchback/A250D-swiper-1.jpg"
+                    alt=""
+                    class="w-full h-full"
+                  />
+                  <div
+                    class="w-[80%] h-2 bg-amber-500 rounded-xl absolute -bottom-1 right-5"
+                  ></div>
+                </a>
+              </div>
 
-            <div
-              class="swiper-slide relative overflow-hidden w-full flex-center rounded-xl"
-            >
-              <a href="#">
-                <div class="w-full flex-center absolute top-3 text-white">
-                  <span class="font-Estedad-Bold">سدان</span>
-                </div>
-                <img
-                  src="./Picture/Car-Picture/Sedan/Sedan-swiper-1.jpg"
-                  alt=""
-                  class="w-full h-full object-cover"
-                />
-                <div
-                  class="w-[80%] h-2 bg-amber-500 rounded-xl absolute -bottom-1 rigt-5"
-                ></div>
-              </a>
-            </div>
+              <!--------------------- Card 6 --------------------->
 
-            <!--------------------- Card 8 --------------------->
+              <div
+                class="swiper-slide relative overflow-hidden w-full flex-center rounded-xl"
+              >
+                <a href="#">
+                  <div class="w-full flex-center absolute top-3 text-white">
+                    <span class="font-Estedad-Bold">سوپراسپرت</span>
+                  </div>
+                  <img
+                    src="./Picture/Car-Picture/Hypercar/Mercedes-AMG One-swiper-1.jpg"
+                    alt=""
+                    class="w-full h-full"
+                  />
+                  <div
+                    class="w-[80%] h-2 bg-amber-500 rounded-xl absolute -bottom-1 right-5"
+                  ></div>
+                </a>
+              </div>
 
-            <div
-              class="swiper-slide relative overflow-hidden w-full flex-center rounded-xl"
-            >
-              <a href="#">
-                <div class="w-full flex-center absolute top-3 text-white">
-                  <span class="font-Estedad-Bold">ون ، مینی ون</span>
-                </div>
-                <img
-                  src="./Picture/Car-Picture/Van  Minivan/MAYBACH SPRINTER-swiper-1.jpg"
-                  alt=""
-                  class="w-full h-full object-cover"
-                />
-                <div
-                  class="w-[80%] h-2 bg-amber-500 rounded-xl absolute -bottom-1 right-5"
-                ></div>
-              </a>
+              <!--------------------- Card 7 --------------------->
+
+              <div
+                class="swiper-slide relative overflow-hidden w-full flex-center rounded-xl"
+              >
+                <a href="#">
+                  <div class="w-full flex-center absolute top-3 text-white">
+                    <span class="font-Estedad-Bold">سدان</span>
+                  </div>
+                  <img
+                    src="./Picture/Car-Picture/Sedan/Sedan-swiper-1.jpg"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="w-[80%] h-2 bg-amber-500 rounded-xl absolute -bottom-1 rigt-5"
+                  ></div>
+                </a>
+              </div>
+
+              <!--------------------- Card 8 --------------------->
+
+              <div
+                class="swiper-slide relative overflow-hidden w-full flex-center rounded-xl"
+              >
+                <a href="#">
+                  <div class="w-full flex-center absolute top-3 text-white">
+                    <span class="font-Estedad-Bold">ون ، مینی ون</span>
+                  </div>
+                  <img
+                    src="./Picture/Car-Picture/Van  Minivan/MAYBACH SPRINTER-swiper-1.jpg"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="w-[80%] h-2 bg-amber-500 rounded-xl absolute -bottom-1 right-5"
+                  ></div>
+                </a>
+              </div>
             </div>
           </div>
+
+          <!--------------------- Swiper-1 End --------------------->
         </div>
-        <!--------------------- Swiper-1 End --------------------->
+
+        <!--------------------- Mobile-Tablet End --------------------->
+
+        <!--------------------------- Pc Start --------------------------->
+
+        <div class="w-full h-fit mt-25 hidden lg:grid lg:grid-cols-8 lg:gap-3">
+          <!--------------------- Card 1 --------------------->
+
+          <div
+            class="w-full h-fit relative rounded-xl shadow-[2px_5px_5px_rgba(253,183,19,0.35)]"
+          >
+            <a href="#">
+              <div class="w-full flex-center absolute top-3">
+                <span
+                  class="font-Estedad-Bold text-secondary text-shadow-[1px_1px_3px_rgba(0,0,0,1)]"
+                  >کوپه</span
+                >
+              </div>
+              <img
+                src="./Picture/Car-Picture/coupe/Benz Coupe-swiper-1.jpg"
+                alt=""
+                class="object-cover h-100 rounded-xl -scale-x-100 relative -z-1"
+              />
+            </a>
+          </div>
+
+          <!--------------------- Card 2 --------------------->
+
+          <div
+            class="w-full h-fit relative rounded-xl shadow-[2px_5px_5px_rgba(253,183,19,0.35)]"
+          >
+            <a href="#">
+              <div class="w-full flex-center absolute top-3">
+                <span
+                  class="font-Estedad-Bold text-secondary text-shadow-[1px_1px_3px_rgba(0,0,0,1)]"
+                  >شاسی بلند</span
+                >
+              </div>
+              <img
+                src="./Picture/Car-Picture/SUV/SUV.jpg"
+                alt=""
+                class="object-cover h-100 rounded-xl -scale-x-100 relative -z-1"
+              />
+            </a>
+          </div>
+
+          <!--------------------- Card 3 --------------------->
+
+          <div
+            class="w-full h-fit relative rounded-xl shadow-[2px_5px_5px_rgba(253,183,19,0.35)]"
+          >
+            <a href="#">
+              <div class="w-full flex-center absolute top-3">
+                <span
+                  class="font-Estedad-Bold text-secondary text-shadow-[1px_1px_3px_rgba(0,0,0,1)]"
+                  >کروک</span
+                >
+              </div>
+              <img
+                src="./Picture/Car-Picture/Convertible/Benz Convertible.jpg"
+                alt=""
+                class="object-cover h-100 rounded-xl -scale-x-100 relative -z-1"
+              />
+            </a>
+          </div>
+
+          <!--------------------- Card 4 --------------------->
+
+          <div
+            class="w-fit h-fit relative rounded-xl shadow-[2px_5px_5px_rgba(253,183,19,0.35)]"
+          >
+            <a href="#">
+              <div class="w-full flex-center absolute top-3">
+                <span
+                  class="font-Estedad-Bold text-secondary text-shadow-[1px_1px_3px_rgba(0,0,0,1)]"
+                  >اسپرت</span
+                >
+              </div>
+              <img
+                src="./Picture/Car-Picture/Sports Car/Mercedes-AMG GT In Deep Green-swiper-1.jpg"
+                alt=""
+                class="object-cover h-100 rounded-xl"
+              />
+            </a>
+          </div>
+          <!--------------------- Card 5 --------------------->
+
+          <div
+            class="w-full h-fit relative rounded-xl shadow-[2px_5px_5px_rgba(253,183,19,0.35)]"
+          >
+            <a href="#">
+              <div class="w-full flex-center absolute top-3">
+                <span
+                  class="font-Estedad-Bold text-secondary text-shadow-[1px_1px_3px_rgba(0,0,0,1)]"
+                  >سدان</span
+                >
+              </div>
+              <img
+                src="./Picture/Car-Picture/Sedan/Sedan-swiper-1.jpg"
+                alt=""
+                class="object-cover h-100 rounded-xl"
+              />
+            </a>
+          </div>
+
+          <!--------------------- Card 6 --------------------->
+
+          <div
+            class="w-full h-fit relative rounded-xl shadow-[2px_5px_5px_rgba(253,183,19,0.35)]"
+          >
+            <a href="#">
+              <div class="w-full flex-center absolute top-3">
+                <span
+                  class="font-Estedad-Bold text-secondary text-shadow-[1px_1px_3px_rgba(0,0,0,1)]"
+                  >سوپراسپرت</span
+                >
+              </div>
+              <img
+                src="./Picture/Car-Picture/Hypercar/Mercedes-AMG One-swiper-1.jpg"
+                alt=""
+                class="object-cover h-100 rounded-xl -scale-x-100 relative -z-1"
+              />
+            </a>
+          </div>
+
+          <!--------------------- Card 7 --------------------->
+
+          <div
+            class="w-full h-fit relative rounded-xl shadow-[2px_5px_5px_rgba(253,183,19,0.35)]"
+          >
+            <a href="#">
+              <div class="w-full flex-center absolute top-3">
+                <span
+                  class="font-Estedad-Bold text-secondary text-shadow-[1px_1px_3px_rgba(0,0,0,1)]"
+                  >هاچبک</span
+                >
+              </div>
+              <img
+                src="./Picture/Car-Picture/Hatchback/A250D-swiper-1.jpg"
+                alt=""
+                class="object-cover h-100 rounded-xl -scale-x-100 relative -z-1"
+              />
+            </a>
+          </div>
+          <!--------------------- Card 8 --------------------->
+
+          <div
+            class="w-full h-fit relative rounded-xl shadow-[2px_5px_5px_rgba(253,183,19,0.35)]"
+          >
+            <a href="#">
+              <div class="w-full flex-center absolute top-3">
+                <span
+                  class="font-Estedad-Bold text-secondary text-shadow-[1px_1px_3px_rgba(0,0,0,1)]"
+                  >ون ، مینی ون</span
+                >
+              </div>
+              <img
+                src="./Picture/Car-Picture/Van  Minivan/MAYBACH SPRINTER-swiper-1.jpg"
+                alt=""
+                class="object-cover h-100 rounded-xl -scale-x-100 relative -z-1"
+              />
+            </a>
+          </div>
+        </div>
+
+        <!--------------------------- Pc End --------------------------->
+
         <!--------------------- Car-Model-List-swiper End --------------------->
 
         <!--------------------- inventory Start --------------------->
         <div class="w-full h-fit flex-center flex-col gap-y-4 select-none">
           <div class="w-[60%] h-fit flex-center flex-col gap-y-2">
             <div class="w-fit h-fit">
-              <span class="font-Estedad-ExtraLight">
+              <span class="font-Estedad-ExtraLight md:text-xl lg:text-2xl">
                 مشاهده موجودی خودروها
               </span>
             </div>
             <div class="w-fit h-fit">
-              <span class="font-Estedad-ExtraBold text-2xl">
+              <span
+                class="font-Estedad-ExtraBold text-2xl md:text-3xl lg:text-4xl"
+              >
                 رزرو خودرو در
-                <span class="font-Estedad-ExtraBold text-secondary text-2xl"
+                <span
+                  class="font-Estedad-ExtraBold text-secondary text-2xl md:text-3xl lg:text-4xl"
                   >اُتـــورِنت</span
                 >
               </span>
             </div>
           </div>
-          <div class="w-full h-fit flex-center gap-x-5">
+          <div
+            class="w-full h-fit flex items-center justify-between px-3 gap-x-5"
+          >
             <div class="w-fit h-fit">
               <!--------------------- Button Group --------------------->
 
               <div class="w-fit flex-center gap-x-2">
                 <button
                   type="button"
-                  class="p-2 inline-flex items-center border border-primary text-[0.5rem] text-primary text-nowrap font-Estedad-SemiBold focus:z-10 border-gray-200-gray-800 hover:bg-secondary/80 hover:text-black focus:outline-hidden focus:bg-primary focus:border-white focus:text-white disabled:opacity-50 disabled:pointer-events-none rounded-md transition-colors"
+                  class="px-3 py-2 inline-flex items-center border border-primary text-[0.5rem] md:text-sm lg:text-lg text-primary text-nowrap font-Estedad-SemiBold focus:z-10 border-gray-200-gray-800 hover:bg-secondary/80 hover:text-black focus:outline-hidden focus:bg-primary focus:border-white focus:text-white disabled:opacity-50 disabled:pointer-events-none rounded-md transition-colors"
                 >
-                  اجاره خودرو با راننده
+                  پرطرفدار
                 </button>
 
                 <!-- ////////////////////////////////////// -->
 
                 <button
                   type="button"
-                  class="p-2 inline-flex items-center border border-primary text-[0.5rem] text-primary text-nowrap font-Estedad-SemiBold focus:z-10 border-gray-200-gray-800 hover:bg-secondary/80 hover:text-black focus:outline-hidden focus:bg-primary focus:border-white focus:text-white disabled:opacity-50 disabled:pointer-events-none rounded-md transition-colors"
+                  class="px-3 py-2 inline-flex items-center border border-primary text-[0.5rem] md:text-sm lg:text-lg text-primary text-nowrap font-Estedad-SemiBold focus:z-10 border-gray-200-gray-800 hover:bg-secondary/80 hover:text-black focus:outline-hidden focus:bg-primary focus:border-white focus:text-white disabled:opacity-50 disabled:pointer-events-none rounded-md transition-colors"
                 >
-                  اجاره خودرو بی راننده
+                  لوکس
                 </button>
 
                 <!-- ////////////////////////////////////// -->
 
                 <button
                   type="button"
-                  class="p-2 inline-flex items-center border border-primary text-[0.5rem] text-primary text-nowrap font-Estedad-SemiBold focus:z-10 border-gray-200-gray-800 hover:bg-secondary/80 hover:text-black focus:outline-hidden focus:bg-primary focus:border-white focus:text-white disabled:opacity-50 disabled:pointer-events-none rounded-md transition-colors"
+                  class="px-3 py-2 inline-flex items-center border border-primary text-[0.5rem] md:text-sm lg:text-lg text-primary text-nowrap font-Estedad-SemiBold focus:z-10 border-gray-200-gray-800 hover:bg-secondary/80 hover:text-black focus:outline-hidden focus:bg-primary focus:border-white focus:text-white disabled:opacity-50 disabled:pointer-events-none rounded-md transition-colors"
                 >
-                  اجاره ماشین عروس
+                  اقتصادی
                 </button>
               </div>
 
               <!--------------------- End Button Group --------------------->
             </div>
             <div
-              class="w-fit h-fit flex justify-end text-nowrap font-Estedad-SemiBold text-[0.5rem] text-primary"
+              class="w-fit h-fit flex justify-end text-nowrap font-Estedad-SemiBold text-[0.5rem] md:text-[0.6rem] lg:text-sm text-primary"
             >
               <a href="#" class="hover:text-secondary transition-colors"
                 >اطلاعات بیشتر در مورد رزرو خودرو</a
@@ -3277,504 +3532,552 @@
 
         <!--------------------- inventory-Card Start --------------------->
 
-        <!--------------------- swiper-2 Start --------------------->
+        <!--------------------- Mobile-Tablet Start --------------------->
 
-        <div class="swiper mySwiper_2 w-full h-fit select-none">
-          <div class="swiper-wrapper">
-            <!--------------------- Card 1 --------------------->
+        <div class="w-full h-fit lg:hidden">
+          <!--------------------- swiper-2 Start --------------------->
 
-            <div class="swiper-slide">
-              <div class="w-full h-fit flex flex-col gap-y-3">
-                <!--------------------- img --------------------->
+          <div class="swiper mySwiper_2 w-full h-fit select-none">
+            <div class="swiper-wrapper">
+              <!--------------------- Card 1 --------------------->
 
-                <div class="w-full h-fit flex-center flex-col relative">
-                  <img
-                    src="./Picture/Car-Picture/Sports Car/Mercedes-AMG GT In Deep Green-swiper-2.jpg"
-                    class="w-full h-87 object-cover"
-                  />
-                  <div
-                    class="w-10 h-10 bg-primary flex-center rounded-lg absolute top-3 left-3"
-                  >
-                    <span class="w-fit text-white">20%</span>
-                  </div>
-                </div>
+              <div class="swiper-slide">
+                <div class="w-full h-fit flex flex-col gap-y-3">
+                  <!--------------------- img --------------------->
 
-                <!--------------------- Info --------------------->
-
-                <div class="w-full h-20 flex flex-col gap-y-3 px-5">
-                  <h2 class="font-Estedad-Bold text-stone-800">
-                    اجاره بنز ای ام جی
-                  </h2>
-                  <span class="text-stone-800">مدل : 2016</span>
-                </div>
-
-                <!--------------------- Price --------------------->
-
-                <div class="w-full h-30 flex flex-col gap-y-3 px-5">
-                  <!--------------------- 1 --------------------->
-
-                  <div
-                    class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
-                  >
-                    <div class="w-fit h-fit">
-                      <span class="text-stone-800"> از 1 تا 30 روز:</span>
-                      <span class="text-primary">8,500,000</span>
-                    </div>
-
-                    <!-- ////////////////////////////////////// -->
-                    <div class="w-fit h-fit">
-                      <span class="text-stone-800">روزانه</span>
-                    </div>
-                  </div>
-
-                  <!--------------------- 2 --------------------->
-
-                  <div
-                    class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
-                  >
-                    <div class="w-fit h-fit">
-                      <span class=""> از 1 تا 30 روز:</span>
-                      <span class="text-primary">8,500,000</span>
-                    </div>
-
-                    <!-- ////////////////////////////////////// -->
-
-                    <div class="w-fit h-fit">
-                      <span class="">ماهانه</span>
-                    </div>
-                  </div>
-                </div>
-
-                <!--------------------- Request --------------------->
-
-                <div class="w-full h-20 px-5 flex flex-col gap-y-3">
-                  <div class="w-full h-10 flex-between">
-                    <span class="text-stone-800">مبلغ ضمانت:</span>
-                    <span class="text-stone-800">80 میلیون تومان</span>
-                  </div>
-
-                  <!--------------------- Button --------------------->
-
-                  <div class="w-full h-fit">
-                    <button
-                      type="button"
-                      class="w-full h-10 p-2 flex-center bg-primary text-white border border-stone-300 text-nowrap font-Estedad-SemiBold focus:z-10 border-gray-200-gray-800 hover:bg-secondary/80 hover:text-black focus:outline-hidden focus:bg-primary/90 focus:border-white focus:text-white disabled:opacity-50 disabled:pointer-events-none rounded-lg transition-colors"
+                  <div class="w-full h-fit flex-center flex-col relative">
+                    <img
+                      src="./Picture/Car-Picture/Sports Car/Mercedes-AMG GT In Deep Green-swiper-2.jpg"
+                      class="w-full h-87 object-cover md:h-120"
+                    />
+                    <div
+                      class="w-10 h-10 bg-primary flex-center rounded-lg absolute top-3 left-3"
                     >
-                      درخواست رزرو
-                    </button>
+                      <span class="w-fit text-white">20%</span>
+                    </div>
+                  </div>
+
+                  <!--------------------- Info --------------------->
+
+                  <div class="w-full h-20 flex flex-col gap-y-3 px-5">
+                    <h2 class="font-Estedad-Bold text-stone-800 md:text-lg">
+                      اجاره بنز ای ام جی
+                    </h2>
+                    <span class="text-stone-800">مدل : 2016</span>
+                  </div>
+
+                  <!--------------------- Price --------------------->
+
+                  <div class="w-full h-30 flex flex-col gap-y-3 px-5">
+                    <!--------------------- 1 --------------------->
+
+                    <div
+                      class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
+                    >
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-lg">
+                          از 1 تا 30 روز:</span
+                        >
+                        <span class="text-primary md:text-lg">8,500,000</span>
+                      </div>
+
+                      <!-- ////////////////////////////////////// -->
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-xl">روزانه</span>
+                      </div>
+                    </div>
+
+                    <!--------------------- 2 --------------------->
+
+                    <div
+                      class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
+                    >
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-lg">
+                          از 1 تا 30 روز:</span
+                        >
+                        <span class="text-primary md:text-lg">8,500,000</span>
+                      </div>
+
+                      <!-- ////////////////////////////////////// -->
+
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-xl">ماهانه</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--------------------- Request --------------------->
+
+                  <div class="w-full h-20 px-5 flex flex-col gap-y-3">
+                    <div class="w-full h-10 flex-between">
+                      <span class="text-stone-800 md:text-xl">مبلغ ضمانت:</span>
+                      <span class="text-stone-800 md:text-lg"
+                        >80 میلیون تومان</span
+                      >
+                    </div>
+
+                    <!--------------------- Button --------------------->
+
+                    <div class="w-full h-fit">
+                      <button
+                        type="button"
+                        class="w-full h-10 p-2 flex-center bg-primary text-white border border-stone-300 text-nowrap font-Estedad-SemiBold focus:z-10 border-gray-200-gray-800 hover:bg-secondary/80 hover:text-black focus:outline-hidden focus:bg-primary/90 focus:border-white focus:text-white disabled:opacity-50 disabled:pointer-events-none rounded-lg transition-colors md:text-lg"
+                      >
+                        درخواست رزرو
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <!--------------------- Card 2 --------------------->
+              <!--------------------- Card 2 --------------------->
 
-            <div class="swiper-slide">
-              <div class="w-full h-fit flex flex-col gap-y-3">
-                <!--------------------- img --------------------->
+              <div class="swiper-slide">
+                <div class="w-full h-fit flex flex-col gap-y-3">
+                  <!--------------------- img --------------------->
 
-                <div class="w-full h-fit flex-center flex-col">
-                  <img
-                    src="./Picture/Car-Picture/coupe/Hyundai Genesis Coupe-swpier-2.jpg"
-                    class="w-full h-87 object-cover"
-                  />
-                </div>
-
-                <!--------------------- Info --------------------->
-
-                <div class="w-full h-20 flex flex-col gap-y-3 px-5">
-                  <h2 class="font-Estedad-Bold text-stone-800">
-                    اجاره جنسیس کوپه
-                  </h2>
-                  <span class="text-stone-800">مدل : 2016</span>
-                </div>
-
-                <!--------------------- Price --------------------->
-
-                <div class="w-full h-30 flex flex-col gap-y-3 px-5">
-                  <!--------------------- 1 --------------------->
-
-                  <div
-                    class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
-                  >
-                    <div class="w-fit h-fit">
-                      <span class="text-stone-800"> از 1 تا 30 روز:</span>
-                      <span class="text-primary">8,500,000</span>
-                    </div>
-
-                    <!-- ////////////////////////////////////// -->
-                    <div class="w-fit h-fit">
-                      <span class="text-stone-800">روزانه</span>
-                    </div>
+                  <div class="w-full h-fit flex-center flex-col">
+                    <img
+                      src="./Picture/Car-Picture/coupe/Hyundai Genesis Coupe-swpier-2.jpg"
+                      class="w-full h-87 object-cover md:h-120"
+                    />
                   </div>
 
-                  <!--------------------- 2 --------------------->
+                  <!--------------------- Info --------------------->
 
-                  <div
-                    class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
-                  >
-                    <div class="w-fit h-fit">
-                      <span class=""> از 1 تا 30 روز:</span>
-                      <span class="text-primary">8,500,000</span>
-                    </div>
-
-                    <!-- ////////////////////////////////////// -->
-
-                    <div class="w-fit h-fit">
-                      <span class="">ماهانه</span>
-                    </div>
-                  </div>
-                </div>
-
-                <!--------------------- Request --------------------->
-
-                <div class="w-full h-20 px-5 flex flex-col gap-y-3">
-                  <div class="w-full h-10 flex-between">
-                    <span class="text-stone-800">مبلغ ضمانت:</span>
-                    <span class="text-stone-800">80 میلیون تومان</span>
+                  <div class="w-full h-20 flex flex-col gap-y-3 px-5">
+                    <h2 class="font-Estedad-Bold text-stone-800">
+                      اجاره جنسیس کوپه
+                    </h2>
+                    <span class="text-stone-800">مدل : 2016</span>
                   </div>
 
-                  <!--------------------- Button --------------------->
+                  <!--------------------- Price --------------------->
 
-                  <div class="w-full h-fit">
-                    <button
-                      type="button"
-                      class="w-full h-10 p-2 flex-center bg-primary text-white border border-stone-300 text-nowrap font-Estedad-SemiBold focus:z-10 border-gray-200-gray-800 hover:bg-secondary/80 hover:text-black focus:outline-hidden focus:bg-primary/90 focus:border-white focus:text-white disabled:opacity-50 disabled:pointer-events-none rounded-lg transition-colors"
+                  <div class="w-full h-30 flex flex-col gap-y-3 px-5">
+                    <!--------------------- 1 --------------------->
+
+                    <div
+                      class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
                     >
-                      درخواست رزرو
-                    </button>
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-lg">
+                          از 1 تا 30 روز:</span
+                        >
+                        <span class="text-primary md:text-lg">8,500,000</span>
+                      </div>
+
+                      <!-- ////////////////////////////////////// -->
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-xl">روزانه</span>
+                      </div>
+                    </div>
+
+                    <!--------------------- 2 --------------------->
+
+                    <div
+                      class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
+                    >
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-lg">
+                          از 1 تا 30 روز:</span
+                        >
+                        <span class="text-primary md:text-lg">8,500,000</span>
+                      </div>
+
+                      <!-- ////////////////////////////////////// -->
+
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-xl">ماهانه</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--------------------- Request --------------------->
+
+                  <div class="w-full h-20 px-5 flex flex-col gap-y-3">
+                    <div class="w-full h-10 flex-between">
+                      <span class="text-stone-800 md:text-xl">مبلغ ضمانت:</span>
+                      <span class="text-stone-800 md:text-lg"
+                        >80 میلیون تومان</span
+                      >
+                    </div>
+
+                    <!--------------------- Button --------------------->
+
+                    <div class="w-full h-fit">
+                      <button
+                        type="button"
+                        class="w-full h-10 p-2 flex-center bg-primary text-white border border-stone-300 text-nowrap font-Estedad-SemiBold focus:z-10 border-gray-200-gray-800 hover:bg-secondary/80 hover:text-black focus:outline-hidden focus:bg-primary/90 focus:border-white focus:text-white disabled:opacity-50 disabled:pointer-events-none rounded-lg transition-colors md:text-lg"
+                      >
+                        درخواست رزرو
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <!--------------------- Card 3 --------------------->
+              <!--------------------- Card 3 --------------------->
 
-            <div class="swiper-slide">
-              <div class="w-full h-fit flex flex-col gap-y-3">
-                <!--------------------- img --------------------->
+              <div class="swiper-slide">
+                <div class="w-full h-fit flex flex-col gap-y-3">
+                  <!--------------------- img --------------------->
 
-                <div class="w-full h-fit flex-center flex-col">
-                  <img
-                    src="./Picture/Car-Picture/Sedan/Sedan-swiper-2.jpg"
-                    class="w-full h-87 object-cover"
-                  />
-                </div>
-
-                <!--------------------- Info --------------------->
-
-                <div class="w-full h-20 flex flex-col gap-y-3 px-5">
-                  <h2 class="font-Estedad-Bold text-stone-800">
-                    اجاره سدان آئودی
-                  </h2>
-                  <span class="text-stone-800">مدل : 2016</span>
-                </div>
-
-                <!--------------------- Price --------------------->
-
-                <div class="w-full h-30 flex flex-col gap-y-3 px-5">
-                  <!--------------------- 1 --------------------->
-
-                  <div
-                    class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
-                  >
-                    <div class="w-fit h-fit">
-                      <span class="text-stone-800"> از 1 تا 30 روز:</span>
-                      <span class="text-primary">8,500,000</span>
-                    </div>
-
-                    <!-- ////////////////////////////////////// -->
-                    <div class="w-fit h-fit">
-                      <span class="text-stone-800">روزانه</span>
-                    </div>
+                  <div class="w-full h-fit flex-center flex-col">
+                    <img
+                      src="./Picture/Car-Picture/Sedan/Sedan-swiper-2.jpg"
+                      class="w-full h-87 object-cover md:h-120"
+                    />
                   </div>
 
-                  <!--------------------- 2 --------------------->
+                  <!--------------------- Info --------------------->
 
-                  <div
-                    class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
-                  >
-                    <div class="w-fit h-fit">
-                      <span class=""> از 1 تا 30 روز:</span>
-                      <span class="text-primary">8,500,000</span>
-                    </div>
-
-                    <!-- ////////////////////////////////////// -->
-
-                    <div class="w-fit h-fit">
-                      <span class="">ماهانه</span>
-                    </div>
-                  </div>
-                </div>
-
-                <!--------------------- Request --------------------->
-
-                <div class="w-full h-20 px-5 flex flex-col gap-y-3">
-                  <div class="w-full h-10 flex-between">
-                    <span class="text-stone-800">مبلغ ضمانت:</span>
-                    <span class="text-stone-800">80 میلیون تومان</span>
+                  <div class="w-full h-20 flex flex-col gap-y-3 px-5">
+                    <h2 class="font-Estedad-Bold text-stone-800">
+                      اجاره سدان آئودی
+                    </h2>
+                    <span class="text-stone-800">مدل : 2016</span>
                   </div>
 
-                  <!--------------------- Button --------------------->
+                  <!--------------------- Price --------------------->
 
-                  <div class="w-full h-fit">
-                    <button
-                      type="button"
-                      class="w-full h-10 p-2 flex-center bg-primary text-white border border-stone-300 text-nowrap font-Estedad-SemiBold focus:z-10 border-gray-200-gray-800 hover:bg-secondary/80 hover:text-black focus:outline-hidden focus:bg-primary/90 focus:border-white focus:text-white disabled:opacity-50 disabled:pointer-events-none rounded-lg transition-colors"
+                  <div class="w-full h-30 flex flex-col gap-y-3 px-5">
+                    <!--------------------- 1 --------------------->
+
+                    <div
+                      class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
                     >
-                      درخواست رزرو
-                    </button>
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-lg">
+                          از 1 تا 30 روز:</span
+                        >
+                        <span class="text-primary md:text-lg">8,500,000</span>
+                      </div>
+
+                      <!-- ////////////////////////////////////// -->
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-xl">روزانه</span>
+                      </div>
+                    </div>
+
+                    <!--------------------- 2 --------------------->
+
+                    <div
+                      class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
+                    >
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-lg">
+                          از 1 تا 30 روز:</span
+                        >
+                        <span class="text-primary md:text-lg">8,500,000</span>
+                      </div>
+
+                      <!-- ////////////////////////////////////// -->
+
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-xl">ماهانه</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--------------------- Request --------------------->
+
+                  <div class="w-full h-20 px-5 flex flex-col gap-y-3">
+                    <div class="w-full h-10 flex-between">
+                      <span class="text-stone-800 md:text-xl">مبلغ ضمانت:</span>
+                      <span class="text-stone-800 md:text-lg"
+                        >80 میلیون تومان</span
+                      >
+                    </div>
+
+                    <!--------------------- Button --------------------->
+
+                    <div class="w-full h-fit">
+                      <button
+                        type="button"
+                        class="w-full h-10 p-2 flex-center bg-primary text-white border border-stone-300 text-nowrap font-Estedad-SemiBold focus:z-10 border-gray-200-gray-800 hover:bg-secondary/80 hover:text-black focus:outline-hidden focus:bg-primary/90 focus:border-white focus:text-white disabled:opacity-50 disabled:pointer-events-none rounded-lg transition-colors md:text-lg"
+                      >
+                        درخواست رزرو
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <!--------------------- Card 4 --------------------->
+              <!--------------------- Card 4 --------------------->
 
-            <div class="swiper-slide">
-              <div class="w-full h-fit flex flex-col gap-y-3">
-                <!--------------------- img --------------------->
+              <div class="swiper-slide">
+                <div class="w-full h-fit flex flex-col gap-y-3">
+                  <!--------------------- img --------------------->
 
-                <div class="w-full h-fit flex-center flex-col">
-                  <img
-                    src="./Picture/Car-Picture/Convertible/Benz Convertible-swiper-2.jpg"
-                    class="w-full h-87 object-cover"
-                  />
-                </div>
-
-                <!--------------------- Info --------------------->
-
-                <div class="w-full h-20 flex flex-col gap-y-3 px-5">
-                  <h2 class="font-Estedad-Bold text-stone-800">
-                    اجاره بنز کروک
-                  </h2>
-                  <span class="text-stone-800">مدل : 2016</span>
-                </div>
-
-                <!--------------------- Price --------------------->
-
-                <div class="w-full h-30 flex flex-col gap-y-3 px-5">
-                  <!--------------------- 1 --------------------->
-
-                  <div
-                    class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
-                  >
-                    <div class="w-fit h-fit">
-                      <span class="text-stone-800"> از 1 تا 30 روز:</span>
-                      <span class="text-primary">8,500,000</span>
-                    </div>
-
-                    <!-- ////////////////////////////////////// -->
-                    <div class="w-fit h-fit">
-                      <span class="text-stone-800">روزانه</span>
-                    </div>
+                  <div class="w-full h-fit flex-center flex-col">
+                    <img
+                      src="./Picture/Car-Picture/Convertible/Benz Convertible-swiper-2.jpg"
+                      class="w-full h-87 object-cover md:h-120"
+                    />
                   </div>
 
-                  <!--------------------- 2 --------------------->
+                  <!--------------------- Info --------------------->
 
-                  <div
-                    class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
-                  >
-                    <div class="w-fit h-fit">
-                      <span class=""> از 1 تا 30 روز:</span>
-                      <span class="text-primary">8,500,000</span>
-                    </div>
-
-                    <!-- ////////////////////////////////////// -->
-
-                    <div class="w-fit h-fit">
-                      <span class="">ماهانه</span>
-                    </div>
-                  </div>
-                </div>
-
-                <!--------------------- Request --------------------->
-
-                <div class="w-full h-20 px-5 flex flex-col gap-y-3">
-                  <div class="w-full h-10 flex-between">
-                    <span class="text-stone-800">مبلغ ضمانت:</span>
-                    <span class="text-stone-800">80 میلیون تومان</span>
+                  <div class="w-full h-20 flex flex-col gap-y-3 px-5">
+                    <h2 class="font-Estedad-Bold text-stone-800">
+                      اجاره بنز کروک
+                    </h2>
+                    <span class="text-stone-800">مدل : 2016</span>
                   </div>
 
-                  <!--------------------- Button --------------------->
+                  <!--------------------- Price --------------------->
 
-                  <div class="w-full h-fit">
-                    <button
-                      type="button"
-                      class="w-full h-10 p-2 flex-center bg-primary text-white border border-stone-300 text-nowrap font-Estedad-SemiBold focus:z-10 border-gray-200-gray-800 hover:bg-secondary/80 hover:text-black focus:outline-hidden focus:bg-primary/90 focus:border-white focus:text-white disabled:opacity-50 disabled:pointer-events-none rounded-lg transition-colors"
+                  <div class="w-full h-30 flex flex-col gap-y-3 px-5">
+                    <!--------------------- 1 --------------------->
+
+                    <div
+                      class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
                     >
-                      درخواست رزرو
-                    </button>
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-lg">
+                          از 1 تا 30 روز:</span
+                        >
+                        <span class="text-primary md:text-lg">8,500,000</span>
+                      </div>
+
+                      <!-- ////////////////////////////////////// -->
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-xl">روزانه</span>
+                      </div>
+                    </div>
+
+                    <!--------------------- 2 --------------------->
+
+                    <div
+                      class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
+                    >
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-lg">
+                          از 1 تا 30 روز:</span
+                        >
+                        <span class="text-primary md:text-lg">8,500,000</span>
+                      </div>
+
+                      <!-- ////////////////////////////////////// -->
+
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-xl">ماهانه</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--------------------- Request --------------------->
+
+                  <div class="w-full h-20 px-5 flex flex-col gap-y-3">
+                    <div class="w-full h-10 flex-between">
+                      <span class="text-stone-800 md:text-xl">مبلغ ضمانت:</span>
+                      <span class="text-stone-800 md:text-lg"
+                        >80 میلیون تومان</span
+                      >
+                    </div>
+
+                    <!--------------------- Button --------------------->
+
+                    <div class="w-full h-fit">
+                      <button
+                        type="button"
+                        class="w-full h-10 p-2 flex-center bg-primary text-white border border-stone-300 text-nowrap font-Estedad-SemiBold focus:z-10 border-gray-200-gray-800 hover:bg-secondary/80 hover:text-black focus:outline-hidden focus:bg-primary/90 focus:border-white focus:text-white disabled:opacity-50 disabled:pointer-events-none rounded-lg transition-colors md:text-lg"
+                      >
+                        درخواست رزرو
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <!--------------------- Card 5 --------------------->
+              <!--------------------- Card 5 --------------------->
 
-            <div class="swiper-slide">
-              <div class="w-full h-fit flex flex-col gap-y-3">
-                <!--------------------- img --------------------->
+              <div class="swiper-slide">
+                <div class="w-full h-fit flex flex-col gap-y-3">
+                  <!--------------------- img --------------------->
 
-                <div class="w-full h-fit flex-center flex-col">
-                  <img
-                    src="./Picture/Car-Picture/SUV/Toyota Land cruiser 300-swiper-2.jpg"
-                    class="w-full h-87 object-cover"
-                  />
-                </div>
-
-                <!--------------------- Info --------------------->
-
-                <div class="w-full h-20 flex flex-col gap-y-3 px-5">
-                  <h2 class="font-Estedad-Bold text-stone-800">
-                    اجاره تویوتا لندکروز
-                  </h2>
-                  <span class="text-stone-800">مدل : 2016</span>
-                </div>
-
-                <!--------------------- Price --------------------->
-
-                <div class="w-full h-30 flex flex-col gap-y-3 px-5">
-                  <!--------------------- 1 --------------------->
-
-                  <div
-                    class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
-                  >
-                    <div class="w-fit h-fit">
-                      <span class="text-stone-800"> از 1 تا 30 روز:</span>
-                      <span class="text-primary">8,500,000</span>
-                    </div>
-
-                    <!-- ////////////////////////////////////// -->
-                    <div class="w-fit h-fit">
-                      <span class="text-stone-800">روزانه</span>
-                    </div>
+                  <div class="w-full h-fit flex-center flex-col">
+                    <img
+                      src="./Picture/Car-Picture/SUV/Toyota Land cruiser 300-swiper-2.jpg"
+                      class="w-full h-87 object-cover md:h-120"
+                    />
                   </div>
 
-                  <!--------------------- 2 --------------------->
+                  <!--------------------- Info --------------------->
 
-                  <div
-                    class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
-                  >
-                    <div class="w-fit h-fit">
-                      <span class=""> از 1 تا 30 روز:</span>
-                      <span class="text-primary">8,500,000</span>
-                    </div>
-
-                    <!-- ////////////////////////////////////// -->
-
-                    <div class="w-fit h-fit">
-                      <span class="">ماهانه</span>
-                    </div>
-                  </div>
-                </div>
-
-                <!--------------------- Request --------------------->
-
-                <div class="w-full h-20 px-5 flex flex-col gap-y-3">
-                  <div class="w-full h-10 flex-between">
-                    <span class="text-stone-800">مبلغ ضمانت:</span>
-                    <span class="text-stone-800">80 میلیون تومان</span>
+                  <div class="w-full h-20 flex flex-col gap-y-3 px-5">
+                    <h2 class="font-Estedad-Bold text-stone-800">
+                      اجاره تویوتا لندکروز
+                    </h2>
+                    <span class="text-stone-800">مدل : 2016</span>
                   </div>
 
-                  <!--------------------- Button --------------------->
+                  <!--------------------- Price --------------------->
 
-                  <div class="w-full h-fit">
-                    <button
-                      type="button"
-                      class="w-full h-10 p-2 flex-center bg-primary text-white border border-stone-300 text-nowrap font-Estedad-SemiBold focus:z-10 border-gray-200-gray-800 hover:bg-secondary/80 hover:text-black focus:outline-hidden focus:bg-primary/90 focus:border-white focus:text-white disabled:opacity-50 disabled:pointer-events-none rounded-lg transition-colors"
+                  <div class="w-full h-30 flex flex-col gap-y-3 px-5">
+                    <!--------------------- 1 --------------------->
+
+                    <div
+                      class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
                     >
-                      درخواست رزرو
-                    </button>
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-lg">
+                          از 1 تا 30 روز:</span
+                        >
+                        <span class="text-primary md:text-lg">8,500,000</span>
+                      </div>
+
+                      <!-- ////////////////////////////////////// -->
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-xl">روزانه</span>
+                      </div>
+                    </div>
+
+                    <!--------------------- 2 --------------------->
+
+                    <div
+                      class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
+                    >
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-lg">
+                          از 1 تا 30 روز:</span
+                        >
+                        <span class="text-primary md:text-lg">8,500,000</span>
+                      </div>
+
+                      <!-- ////////////////////////////////////// -->
+
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-xl">ماهانه</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--------------------- Request --------------------->
+
+                  <div class="w-full h-20 px-5 flex flex-col gap-y-3">
+                    <div class="w-full h-10 flex-between">
+                      <span class="text-stone-800 md:text-xl">مبلغ ضمانت:</span>
+                      <span class="text-stone-800 md:text-lg"
+                        >80 میلیون تومان</span
+                      >
+                    </div>
+
+                    <!--------------------- Button --------------------->
+
+                    <div class="w-full h-fit">
+                      <button
+                        type="button"
+                        class="w-full h-10 p-2 flex-center bg-primary text-white border border-stone-300 text-nowrap font-Estedad-SemiBold focus:z-10 border-gray-200-gray-800 hover:bg-secondary/80 hover:text-black focus:outline-hidden focus:bg-primary/90 focus:border-white focus:text-white disabled:opacity-50 disabled:pointer-events-none rounded-lg transition-colors md:text-lg"
+                      >
+                        درخواست رزرو
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <!--------------------- Card 6 --------------------->
+              <!--------------------- Card 6 --------------------->
 
-            <div class="swiper-slide">
-              <div class="w-full h-fit flex flex-col gap-y-3">
-                <!--------------------- img --------------------->
+              <div class="swiper-slide">
+                <div class="w-full h-fit flex flex-col gap-y-3">
+                  <!--------------------- img --------------------->
 
-                <div class="w-full h-fit flex-center flex-col">
-                  <img
-                    src="./Picture/Car-Picture/Hatchback/BMW 1 Series Hatchback -swiper-2.jpg"
-                    class="w-full h-87 object-cover"
-                  />
-                </div>
-
-                <!--------------------- Info --------------------->
-
-                <div class="w-full h-20 flex flex-col gap-y-3 px-5">
-                  <h2 class="font-Estedad-Bold text-stone-800">
-                    اجاره بی ام و هاچبک
-                  </h2>
-                  <span class="text-stone-800">مدل : 2016</span>
-                </div>
-
-                <!--------------------- Price --------------------->
-
-                <div class="w-full h-30 flex flex-col gap-y-3 px-5">
-                  <!--------------------- 1 --------------------->
-
-                  <div
-                    class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
-                  >
-                    <div class="w-fit h-fit">
-                      <span class="text-stone-800"> از 1 تا 30 روز:</span>
-                      <span class="text-primary">8,500,000</span>
-                    </div>
-
-                    <!-- ////////////////////////////////////// -->
-                    <div class="w-fit h-fit">
-                      <span class="text-stone-800">روزانه</span>
-                    </div>
+                  <div class="w-full h-fit flex-center flex-col">
+                    <img
+                      src="./Picture/Car-Picture/Hatchback/BMW 1 Series Hatchback -swiper-2.jpg"
+                      class="w-full h-87 object-cover md:h-120"
+                    />
                   </div>
 
-                  <!--------------------- 2 --------------------->
+                  <!--------------------- Info --------------------->
 
-                  <div
-                    class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
-                  >
-                    <div class="w-fit h-fit">
-                      <span class=""> از 1 تا 30 روز:</span>
-                      <span class="text-primary">8,500,000</span>
-                    </div>
-
-                    <!-- ////////////////////////////////////// -->
-
-                    <div class="w-fit h-fit">
-                      <span class="">ماهانه</span>
-                    </div>
-                  </div>
-                </div>
-
-                <!--------------------- Request --------------------->
-
-                <div class="w-full h-20 px-5 flex flex-col gap-y-3">
-                  <div class="w-full h-10 flex-between">
-                    <span class="text-stone-800">مبلغ ضمانت:</span>
-                    <span class="text-stone-800">80 میلیون تومان</span>
+                  <div class="w-full h-20 flex flex-col gap-y-3 px-5">
+                    <h2 class="font-Estedad-Bold text-stone-800">
+                      اجاره بی ام و هاچبک
+                    </h2>
+                    <span class="text-stone-800">مدل : 2016</span>
                   </div>
 
-                  <!--------------------- Button --------------------->
+                  <!--------------------- Price --------------------->
 
-                  <div class="w-full h-fit">
-                    <button
-                      type="button"
-                      class="w-full h-10 p-2 flex-center bg-primary text-white border border-stone-300 text-nowrap font-Estedad-SemiBold focus:z-10 border-gray-200-gray-800 hover:bg-secondary/80 hover:text-black focus:outline-hidden focus:bg-primary/90 focus:border-white focus:text-white disabled:opacity-50 disabled:pointer-events-none rounded-lg transition-colors"
+                  <div class="w-full h-30 flex flex-col gap-y-3 px-5">
+                    <!--------------------- 1 --------------------->
+
+                    <div
+                      class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
                     >
-                      درخواست رزرو
-                    </button>
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-lg">
+                          از 1 تا 30 روز:</span
+                        >
+                        <span class="text-primary md:text-lg">8,500,000</span>
+                      </div>
+
+                      <!-- ////////////////////////////////////// -->
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-xl">روزانه</span>
+                      </div>
+                    </div>
+
+                    <!--------------------- 2 --------------------->
+
+                    <div
+                      class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
+                    >
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-lg">
+                          از 1 تا 30 روز:</span
+                        >
+                        <span class="text-primary md:text-lg">8,500,000</span>
+                      </div>
+
+                      <!-- ////////////////////////////////////// -->
+
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-xl">ماهانه</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--------------------- Request --------------------->
+
+                  <div class="w-full h-20 px-5 flex flex-col gap-y-3">
+                    <div class="w-full h-10 flex-between">
+                      <span class="text-stone-800 md:text-xl">مبلغ ضمانت:</span>
+                      <span class="text-stone-800 md:text-lg"
+                        >80 میلیون تومان</span
+                      >
+                    </div>
+
+                    <!--------------------- Button --------------------->
+
+                    <div class="w-full h-fit">
+                      <button
+                        type="button"
+                        class="w-full h-10 p-2 flex-center bg-primary text-white border border-stone-300 text-nowrap font-Estedad-SemiBold focus:z-10 border-gray-200-gray-800 hover:bg-secondary/80 hover:text-black focus:outline-hidden focus:bg-primary/90 focus:border-white focus:text-white disabled:opacity-50 disabled:pointer-events-none rounded-lg transition-colors md:text-lg"
+                      >
+                        درخواست رزرو
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
+          <!--------------------- swiper-2 End --------------------->
         </div>
 
-        <!--------------------- swiper-2 End --------------------->
+        <!--------------------- Mobile-Tablet End --------------------->
+
+        <!--------------------------- Pc Start --------------------------->
+
+        <div class=""></div>
+
+        <!--------------------------- Pc End --------------------------->
 
         <!--------------------- inventory-Card End --------------------->
 
@@ -3788,11 +4091,16 @@
           <div class="w-full h-fit flex-center flex-col gap-y-2 select-none">
             <div class="w-[60%] h-fit flex-center flex-col gap-y-2">
               <div class="w-fit h-fit">
-                <span class="font-Estedad-ExtraLight"> چگونه در وبسایت</span>
+                <span class="font-Estedad-ExtraLight md:text-xl lg:text-2xl">
+                  چگونه در وبسایت</span
+                >
               </div>
               <div class="w-fit h-fit">
-                <span class="font-Estedad-ExtraBold text-xl">
-                  <span class="font-Estedad-ExtraBold text-secondary text-xl"
+                <span
+                  class="font-Estedad-ExtraBold text-xl md:text-3xl lg:text-4xl"
+                >
+                  <span
+                    class="font-Estedad-ExtraBold text-secondary text-xl md:text-3xl lg:text-4xl"
                     >اُتـــورِنت</span
                   >
                   خودرو رزرو کنیم؟
@@ -3805,6 +4113,7 @@
             <!--------------------- Steps Mobile --------------------->
 
             <!-- Accordion Group-1 -->
+
             <div
               class="w-2/3 h-full hs-accordion-group flex flex-col z-10 gap-y-3 select-none md:hidden"
             >
@@ -4032,6 +4341,7 @@
                 </div>
               </div>
             </div>
+
             <!-- End Accordion Group-1 -->
 
             <!--------------------- Steps Tablet --------------------->
@@ -4048,7 +4358,7 @@
                     >
                     خود را انتخاب کنید.
                   </span>
-                  <p class="text-sm text-justify">
+                  <p class="text-sm text-justify xl:w-[60%]">
                     خودروی مورد نظر خود را،متناسب با در خواست خود انتخاب کنید.
                   </p>
                 </div>
@@ -4065,7 +4375,7 @@
                     >
                     تحویل را تعیین کنید.
                   </span>
-                  <p class="text-sm text-justify">
+                  <p class="text-sm text-justify xl:w-[60%]">
                     تاریخ موردنظر خود را از تقویم، انتخاب و رزرو کنید
                   </p>
                 </div>
@@ -4084,7 +4394,7 @@
                     >
                     اجاره را پرداخت کنید.
                   </span>
-                  <p class="text-sm text-justify">
+                  <p class="text-sm text-justify xl:w-[60%]">
                     می توانید از طریق کیف پول آنلاین یا کارت های عضو شبکه شتاب
                     هزینه اجاره را پرداخت کنید.
                   </p>
@@ -4102,7 +4412,7 @@
                     >
                     را دریافت کنید.
                   </span>
-                  <p class="text-sm text-justify">
+                  <p class="text-sm text-justify xl:w-[60%]">
                     در زمان و مکان تعیین شده، خودروی خود را دریافت کنید.
                   </p>
                 </div>
@@ -4112,39 +4422,39 @@
             <!--------------------- bg-img Start --------------------->
 
             <div
-              class="w-1/3 h-100 flex-center md:absolute top-0 left-0 relative overflow-hidden"
+              class="w-1/3 h-100 md:h-110 flex-center md:absolute top-0 left-0 md:right-57 md:top-20 xl:top-30  xl:right-95 2xl:right-120 relative overflow-hidden"
             >
-              <img src="./Picture/bg-image/bg-image-2.png" alt="" class="" />
+              <img src="./Picture/bg-image/bg-image-2.png" alt="" class="md:h-100 xl:h-110 2xl:h-100" />
 
               <!--------------------- Light-Top-Right --------------------->
 
               <div
-                class="absolute top-15.5 left-21 -translate-y-1/2 w-20 h-20 bg-linear-to-r from-yellow-200/70 to-transparent blur-md -rotate-55"
+                class="absolute top-18 md:top-7 left-21 md:left-40 xl:left-60 xl:top-1 -translate-y-1/2 w-20 h-20 bg-linear-to-r from-yellow-200/70 to-transparent blur-md -rotate-55"
                 style="clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 60%)"
               ></div>
 
               <!--------------------- Light-Top-Left --------------------->
 
               <div
-                class="absolute top-15.5 right-21 -translate-y-1/2 w-20 h-20 bg-linear-to-r from-yellow-200/70 to-transparent blur-md -rotate-125"
+                class="absolute top-18 md:top-7 right-21 md:right-40 xl:right-60 xl:top-1 -translate-y-1/2 w-20 h-20 bg-linear-to-r from-yellow-200/70 to-transparent blur-md -rotate-125"
                 style="clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 60%)"
               ></div>
 
               <!--------------------- Light-Bottom-Right --------------------->
 
               <div
-                class="absolute -bottom-6.5 left-17.5 -translate-y-1/2 w-20 h-20 bg-linear-to-r from-red-200/70 to-transparent blur-md rotate-70"
+                class="absolute -bottom-5 md:-bottom-16 left-17.5 md:left-37 xl:left-58 xl:-bottom-20 -translate-y-1/2 w-20 h-20 bg-linear-to-r from-red-200/70 to-transparent blur-md rotate-70"
                 style="clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 60%)"
               ></div>
 
               <!--------------------- Light-Bottom-Left --------------------->
 
               <div
-                class="absolute -bottom-6.5 right-17.5 -translate-y-1/2 w-20 h-20 bg-linear-to-r from-red-200/70 to-transparent blur-md rotate-110"
+                class="absolute -bottom-5 md:-bottom-16 right-17.5 md:right-37 xl:right-58 xl:-bottom-20 -translate-y-1/2 w-20 h-20 bg-linear-to-r from-red-200/70 to-transparent blur-md rotate-110"
                 style="clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 60%)"
               ></div>
 
-              <div class="w-5 h-90 bg-secondary absolute -z-5"></div>
+              <div class="w-5 h-90 md:h-110 bg-secondary absolute -z-5"></div>
             </div>
 
             <!--------------------- bg-img End --------------------->
@@ -4461,9 +4771,7 @@
           </div>
           <div class="w-full h-fit">
             <!--------------------- Grid --------------------->
-            <div
-              class="w-full relative flex flex-col gap-2 overflow-hidden before:pointer-events-none before:absolute before:inset-y-0 before:start-0 before:z-2 before:w-20 after:pointer-events-none after:absolute after:inset-y-0 after:end-0 after:z-2 after:w-20"
-            >
+            <div class="w-full relative flex flex-col gap-2 overflow-hidden">
               <!--------------------- Row --------------------->
               <div class="flex overflow-hidden">
                 <div
@@ -5168,7 +5476,7 @@
     <!--------------------- Container-Footer Start --------------------->
 
     <footer class="w-full h-fit mt-10 mb-12 md:mb-0">
-      <div class="container md:w-[90%] mx-auto relative">
+      <div class="container mx-auto relative">
         <div class="w-full h-fit flex flex-col gap-y-3 bg-gray-800">
           <!--------------------- Contact Start --------------------->
 
@@ -5351,7 +5659,7 @@
     <!--------------------- md:Chat-Support End --------------------->
 
     <div
-      class="w-15 h-15 bg-stone-300 rounded-full fixed bottom-5 left-5 z-101 hidden md:flex"
+      class="w-15 h-15 bg-stone-300 rounded-full fixed md:bottom-15 left-5 z-50 hidden md:flex lg:bottom-5"
     >
       <!--------------------- Ring --------------------->
 
