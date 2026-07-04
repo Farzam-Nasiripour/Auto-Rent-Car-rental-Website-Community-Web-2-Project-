@@ -72,8 +72,6 @@
   .Logo-Marquee {
     @apply px-4 w-25 md:w-40 flex shrink-0 justify-center items-center;
   }
-
-
 }
 /* Fonts */
 @theme {
@@ -238,3 +236,19 @@
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
+
+/*--------------------- swiper-2 Start --------------------- */
+
+.swiper-pagination-bullet {
+  @apply w-fit h-fit px-3 py-2 rounded-full text-center;
+  line-height: 20px;
+  color: #000;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
+}
+
+/*--------------------- swiper-2 End --------------------- */

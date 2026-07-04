@@ -1428,7 +1428,7 @@
               <!--------------------- col-3 ------------------->
 
               <li class="w-full h-full flex-center">
-                <!--------------------- SVG ------------------->
+                <!--------------------- Search Start ------------------->
 
                 <div class="w-10 h-10 flex-center">
                   <button
@@ -1518,7 +1518,7 @@
                   </div>
                 </div>
 
-                <!--------------------- SVG ------------------->
+                <!--------------------- Search End ------------------->
               </li>
 
               <!--------------------- col-4 ------------------->
@@ -1585,11 +1585,13 @@
                     aria-expanded="false"
                     aria-label="Dropdown"
                   >
-                    <img
-                      class="shrink-0 size-5 rounded-full"
-                      src="./Picture/favicon.svg"
-                      alt="Avatar"
-                    />
+                    <div
+                      class="animate-spin inline-block size-6 border-3 border-current border-t-transparent rounded-[999px] text-purple-600"
+                      role="status"
+                      aria-label="loading"
+                    >
+                      <span class="sr-only">Loading...</span>
+                    </div>
                     Mia Hudson
                     <!--------------------- SVG --------------------->
 
@@ -1686,7 +1688,7 @@
 
                         <!--------------------- SVG --------------------->
 
-                        Dashboard
+                        خانه
                       </a>
                     </li>
 
@@ -1792,9 +1794,10 @@
                                 <li>
                                   <a
                                     class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
-                                    href="#"
+                                    target="_blank"
+                                    href="./pdp.html"
                                   >
-                                    Link 1
+                                    رزرو خودرو
                                   </a>
                                 </li>
 
@@ -1823,80 +1826,6 @@
                             </div>
                           </li>
                           <!--------------------- pdp submenu-1 End --------------------->
-
-                          <!--------------------- pdp submenu-2 Start --------------------->
-                          <li class="hs-accordion" id="pdp-accordion-sub-2">
-                            <button
-                              type="button"
-                              class="hs-accordion-toggle w-full p-1 inline-flex items-center gap-2 border-e-2 border-transparent text-sm whitespace-nowrap text-muted-foreground-1 hover:text-primary-focus focus:outline-hidden focus:text-primary-focus font-Estedad-Medium"
-                              aria-expanded="false"
-                              aria-controls="pdp-accordion-sub-2-collapse-1"
-                            >
-                              Sub Menu 2
-
-                              <!--------------------- SVG --------------------->
-
-                              <svg
-                                width="24"
-                                height="24"
-                                class="hs-accordion-active:block ms-auto hidden size-4"
-                              >
-                                <use href="#Accordion Group-close"></use>
-                              </svg>
-                              <svg
-                                class="hs-accordion-active:hidden ms-auto block size-4"
-                                width="24"
-                                height="24"
-                              >
-                                <use href="#Accordion Group-open"></use>
-                              </svg>
-
-                              <!--------------------- SVG --------------------->
-                            </button>
-
-                            <div
-                              id="pdp-accordion-sub-2-collapse-1"
-                              class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 hidden"
-                              role="region"
-                              aria-labelledby="pdp-accordion-sub-2"
-                            >
-                              <ul class="pt-1 ps-2 space-y-1">
-                                <!--------------------- item-1 --------------------->
-
-                                <li>
-                                  <a
-                                    class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
-                                    href="#"
-                                  >
-                                    Link 1
-                                  </a>
-                                </li>
-
-                                <!--------------------- item-2 --------------------->
-
-                                <li>
-                                  <a
-                                    class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
-                                    href="#"
-                                  >
-                                    Link 2
-                                  </a>
-                                </li>
-
-                                <!--------------------- item-3 --------------------->
-
-                                <li>
-                                  <a
-                                    class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
-                                    href="#"
-                                  >
-                                    Link 3
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <!--------------------- pdp submenu-2 End --------------------->
                         </ul>
                       </div>
                     </li>
@@ -1973,9 +1902,10 @@
                           <li>
                             <a
                               class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
-                              href="#"
+                              target="_blank"
+                              href="./about-us.html"
                             >
-                              Link 1
+                              درباره ما
                             </a>
                           </li>
 
@@ -2102,6 +2032,16 @@
                             >
                               <ul class="pt-1 ps-2 space-y-1">
                                 <!--------------------- item-1 --------------------->
+                                <li>
+                                  <a
+                                    class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-sidebar-nav-foreground rounded-lg hover:bg-sidebar-nav-hover focus:outline-hidden focus:bg-sidebar-nav-focus"
+                                    target="_blank"
+                                    href="./blog.html"
+                                  >
+                                    همه
+                                  </a>
+                                </li>
+                                <!--------------------- item-2 --------------------->
 
                                 <li>
                                   <a
@@ -2112,7 +2052,7 @@
                                   </a>
                                 </li>
 
-                                <!--------------------- item-2 --------------------->
+                                <!--------------------- item-3 --------------------->
 
                                 <li>
                                   <a
@@ -2123,7 +2063,7 @@
                                   </a>
                                 </li>
 
-                                <!--------------------- item-3 --------------------->
+                                <!--------------------- item-4 --------------------->
 
                                 <li>
                                   <a
@@ -2134,7 +2074,7 @@
                                   </a>
                                 </li>
 
-                                <!--------------------- item-4 --------------------->
+                                <!--------------------- item-5 --------------------->
 
                                 <li>
                                   <a
@@ -2250,6 +2190,235 @@
 
         <!--------------------- header-Mobile-Tablet End ------------------->
 
+        <!--------------------- header-Pc Start ------------------->
+
+        <div
+          class="w-[60%] h-15 absolute -bottom-15 rounded-b-xl hidden lg:flex lg:items-center"
+        >
+          <!--------------------- backdrop blur Start ------------------->
+
+          <div
+            class="w-full h-full bg-white/75 backdrop-blur-2xl rounded-b-xl absolute -z-10"
+          ></div>
+
+          <!--------------------- backdrop blur End ------------------->
+          <ul class="w-full h-fit flex-evenly">
+            <!--------------------- col-1 ------------------->
+
+            <li class="w-full h-fit flex-center">
+              <a
+                href="./pdp.html"
+                target="_blank"
+                class="font-Estedad-Medium hover:text-primary-hover"
+              >
+                رزرو خودرو
+              </a>
+            </li>
+
+            <!--------------------- col-2 ------------------->
+
+            <li class="w-full h-fit flex-center">
+              <a href="" class="font-Estedad-Medium"> خدمات </a>
+            </li>
+
+            <!--------------------- col-3 ------------------->
+
+            <li class="w-full h-fit flex-center flex-wrap z-50">
+              <!--------------------- nav Start ------------------->
+
+              <nav class="w-fit mx-auto">
+                <div class="relative">
+                  <div
+                    id="hs-navbar-basic-usage"
+                    class="hs-collapse overflow-hidden transition-all duration-300 basis-full grow"
+                    aria-labelledby="hs-navbar-basic-usage-collapse"
+                    role="region"
+                  >
+                    <div class="flex flex-col gap-y-3 justify-centers">
+                      <div
+                        class="hs-dropdown [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover] [--auto-close:false] [--is-collapse:true] sm:[--is-collapse:false]"
+                      >
+                        <!--------------------- Btn-header ------------------->
+
+                        <button
+                          id="hs-mega-menu"
+                          type="button"
+                          class="hs-dropdown-toggle flex items-center justify-center w-full text-navbar-nav-foreground hover:text-primary-hover focus:outline-hidden focus:text-primary-focus p-4.5"
+                          aria-haspopup="menu"
+                          aria-expanded="false"
+                          aria-label="Mega Menu"
+                        >
+                          <span class="font-Estedad-Medium">بلاگ</span>
+
+                          <svg
+                            class="hs-dropdown-open:-rotate-180 sm:hs-dropdown-open:rotate-0 ms-auto sm:ms-2 shrink-0 size-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path d="m6 9 6 6 6-6" />
+                          </svg>
+                        </button>
+
+                        <!--------------------- Btn-header ------------------->
+
+                        <div
+                          class="hs-dropdown-menu sm:transition-[opacity,margin] sm:ease-in-out sm:duration-150 hs-dropdown-open:opacity-100 opacity-0 w-full hidden z-10 sm:mt-3 top-full inset-s-0 min-w-60 sm:bg-dropdown sm:border sm:border-dropdown-line sm:shadow-md rounded-b-lg py-2 sm:px-2"
+                          role="menu"
+                          aria-orientation="vertical"
+                          aria-labelledby="hs-mega-menu"
+                        >
+                          <!--------------------- items-Dropdown-Btn ------------------->
+
+                          <div class="sm:grid sm:grid-cols-3">
+                            <div class="flex flex-col">
+                              <!--------------------- item-1 ------------------->
+
+                              <a
+                                class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-dropdown-item-foreground hover:bg-dropdown-item-hover focus:outline-hidden focus:bg-dropdown-item-focus"
+                                target="_blank"
+                                href="./blog.html"
+                              >
+                                مقالات
+                              </a>
+                            </div>
+                          </div>
+
+                          <!--------------------- items-Dropdown-Btn ------------------->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+
+              <!--------------------- nav End ------------------->
+            </li>
+
+            <!--------------------- col-4 ------------------->
+
+            <li class="w-full h-fit flex-center">
+              <a
+                href="./about-us.html"
+                target="_blank"
+                class="font-Estedad-Medium hover:text-primary-hover"
+              >
+                درباره ما
+              </a>
+            </li>
+
+            <!--------------------- col-5 ------------------->
+
+            <li class="w-full h-fit flex-center">
+              <a href="" class="font-Estedad-Medium"> تماس با ما </a>
+            </li>
+
+            <!--------------------- col-6 ------------------->
+
+            <li class="w-full h-fit flex-center">
+              <!--------------------- Search Start ------------------->
+
+              <div class="w-10 h-10 flex-center">
+                <button
+                  type="button"
+                  class="w-full h-full flex-center gap-x-2 text-sm font-medium rounded-md bg-stone-400 border border-primary-line text-primary-foreground hover:bg-stone-400-hover focus:outline-hidden focus:bg-stone-400-focus disabled:opacity-50 disabled:pointer-events-none"
+                  aria-haspopup="dialog"
+                  aria-expanded="false"
+                  aria-controls="hs-full-screen-modal-Pc"
+                  data-hs-overlay="#hs-full-screen-modal-Pc"
+                >
+                  <svg class="w-6 h-6">
+                    <use href="#Search"></use>
+                  </svg>
+                </button>
+
+                <div
+                  id="hs-full-screen-modal-Pc"
+                  class="hs-overlay [--overlay-backdrop:false] hidden size-full fixed top-0 inset-s-0 z-80 overflow-x-hidden overflow-y-auto pointer-events-none select-none"
+                  role="dialog"
+                  tabindex="-1"
+                  aria-labelledby="hs-full-screen-label"
+                  data-hs-overlay-keyboard="false"
+                >
+                  <div
+                    class="hs-overlay-open:translate-y-0 hs-overlay-open:duration-700 -translate-y-full transition-all ease-in-out max-w-full max-h-full h-full bg-black/70 backdrop-blur-2xl"
+                  >
+                    <div
+                      class="flex flex-col gap-y-40 pointer-events-auto max-w-full max-h-full h-full"
+                    >
+                      <div class="flex-left py-3 px-4">
+                        <button
+                          type="button"
+                          class="size-8 flex-center gap-x-2 rounded-full bg-surface border border-surface-line text-surface-foreground hover:bg-surface-hover focus:outline-hidden focus:bg-surface-focus disabled:opacity-50 disabled:pointer-events-none"
+                          aria-label="Close"
+                          data-hs-overlay="#hs-full-screen-modal-Pc"
+                        >
+                          <span class="sr-only">Close</span>
+                          <svg
+                            class="shrink-0 size-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path d="M18 6 6 18"></path>
+                            <path d="m6 6 12 12"></path>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="w-full p-4 overflow-y-auto">
+                        <form action="#" class="relative">
+                          <input
+                            type="search"
+                            id="search"
+                            name="q"
+                            placeholder="جستوجوی سریع..."
+                            class="w-full h-fit p-2 pl-15.5 outline-0 rounded-md border border-[rgb(209,234,255)] text-white bg-stone-800"
+                          />
+
+                          <button
+                            type="button"
+                            id="clear-search"
+                            class="bg-surface rounded-full absolute left-10 top-1/2 -translate-y-1/2"
+                          >
+                            <svg class="w-6 h-6 p-1">
+                              <use href="#Close-icon-Search"></use>
+                            </svg>
+                          </button>
+                          <button
+                            type="submit"
+                            class="absolute left-2 top-1/2 -translate-y-1/2"
+                            aria-label="جستجو"
+                          >
+                            <svg class="w-5 h-5" fill="#7c8189">
+                              <use href="#Search-2"></use>
+                            </svg>
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--------------------- Search End ------------------->
+            </li>
+          </ul>
+        </div>
+
+        <!--------------------- header-Pc End ------------------->
+
         <!--------------------- header-Login & Title Start ------------------->
 
         <div class="w-full h-fit flex-between px-5">
@@ -2283,7 +2452,7 @@
     <!--------------------- Container-Main Start --------------------->
 
     <main>
-      <div class="container mx-auto relative flex flex-col gap-y-5">
+      <div class="container mx-auto relative flex flex-col gap-y-5 lg:gap-y-10">
         <!--------------------- Main Banner Start --------------------->
 
         <div class="w-full h-fit relative">
@@ -2968,7 +3137,9 @@
 
       <!--------------------- Container-Main Start --------------------->
 
-      <div class="container md:w-[90%] mx-auto relative flex flex-col gap-y-5">
+      <div
+        class="container md:w-[90%] mx-auto relative flex flex-col gap-y-5 lg:gap-y-10"
+      >
         <!--------------------- About Start --------------------->
 
         <div class="w-full h-fit relative flex flex-col gap-y-5">
@@ -2991,7 +3162,7 @@
               </p>
 
               <p
-                class="w-[80%] text-center text-sm md:text-lg lg:w-[50%] text-stone-200"
+                class="w-[80%] text-center text-sm md:text-lg lg:text-[1rem] xl:text-lg lg:w-[50%] text-stone-200"
               >
                 اجاره خودرو از یک شرکت اجاره خودرو با سابقه به شما کمک می‌کند تا
                 در مسافرت ها، قرار ملاقات‌ های مهم، مجالس و مراسم‌های خانوادگی
@@ -4075,7 +4246,543 @@
 
         <!--------------------------- Pc Start --------------------------->
 
-        <div class=""></div>
+        <div class="w-full h-fit hidden lg:block">
+          <!--------------------- swiper-3 Start --------------------->
+
+          <div class="swiper mySwiper_3 w-full h-fit select-none">
+            <div class="swiper-wrapper">
+              <!--------------------- Card 1 --------------------->
+
+              <div class="swiper-slide">
+                <div class="w-full h-fit flex flex-col gap-y-3">
+                  <!--------------------- img --------------------->
+
+                  <div class="w-full h-fit flex-center flex-col relative">
+                    <img
+                      src="./Picture/Car-Picture/Sports Car/Mercedes-AMG GT In Deep Green-swiper-2.jpg"
+                      class="w-full h-120 object-cover rounded-t-xl"
+                    />
+                    <div
+                      class="w-10 h-10 bg-primary flex-center rounded-lg absolute top-3 left-3"
+                    >
+                      <span class="w-fit text-white">20%</span>
+                    </div>
+                  </div>
+
+                  <!--------------------- Info --------------------->
+
+                  <div class="w-full h-20 flex flex-col gap-y-3 px-5">
+                    <h2 class="font-Estedad-Bold text-stone-800 md:text-lg">
+                      اجاره بنز ای ام جی
+                    </h2>
+                    <span class="text-stone-800">مدل : 2016</span>
+                  </div>
+
+                  <!--------------------- Price --------------------->
+
+                  <div class="w-full h-30 flex flex-col gap-y-3 px-5">
+                    <!--------------------- 1 --------------------->
+
+                    <div
+                      class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
+                    >
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-lg">
+                          از 1 تا 30 روز:</span
+                        >
+                        <span class="text-primary md:text-lg">8,500,000</span>
+                      </div>
+
+                      <!-- ////////////////////////////////////// -->
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-xl">روزانه</span>
+                      </div>
+                    </div>
+
+                    <!--------------------- 2 --------------------->
+
+                    <div
+                      class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
+                    >
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-lg">
+                          از 1 تا 30 روز:</span
+                        >
+                        <span class="text-primary md:text-lg">8,500,000</span>
+                      </div>
+
+                      <!-- ////////////////////////////////////// -->
+
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-xl">ماهانه</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--------------------- Request --------------------->
+
+                  <div class="w-full h-20 px-5 flex flex-col gap-y-3">
+                    <div class="w-full h-10 flex-between">
+                      <span class="text-stone-800 md:text-xl">مبلغ ضمانت:</span>
+                      <span class="text-stone-800 md:text-lg"
+                        >80 میلیون تومان</span
+                      >
+                    </div>
+
+                    <!--------------------- Button --------------------->
+
+                    <div class="w-full h-fit">
+                      <button
+                        type="button"
+                        class="w-full h-10 p-2 flex-center bg-primary text-white border border-stone-300 text-nowrap font-Estedad-SemiBold focus:z-10 border-gray-200-gray-800 hover:bg-secondary/80 hover:text-black focus:outline-hidden focus:bg-primary/90 focus:border-white focus:text-white disabled:opacity-50 disabled:pointer-events-none rounded-lg transition-colors md:text-lg"
+                      >
+                        درخواست رزرو
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--------------------- Card 2 --------------------->
+
+              <div class="swiper-slide">
+                <div class="w-full h-fit flex flex-col gap-y-3">
+                  <!--------------------- img --------------------->
+
+                  <div class="w-full h-fit flex-center flex-col">
+                    <img
+                      src="./Picture/Car-Picture/coupe/Hyundai Genesis Coupe-swpier-2.jpg"
+                      class="w-full h-120 object-cover rounded-t-xl"
+                    />
+                  </div>
+
+                  <!--------------------- Info --------------------->
+
+                  <div class="w-full h-20 flex flex-col gap-y-3 px-5">
+                    <h2 class="font-Estedad-Bold text-stone-800">
+                      اجاره جنسیس کوپه
+                    </h2>
+                    <span class="text-stone-800">مدل : 2016</span>
+                  </div>
+
+                  <!--------------------- Price --------------------->
+
+                  <div class="w-full h-30 flex flex-col gap-y-3 px-5">
+                    <!--------------------- 1 --------------------->
+
+                    <div
+                      class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
+                    >
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-lg">
+                          از 1 تا 30 روز:</span
+                        >
+                        <span class="text-primary md:text-lg">8,500,000</span>
+                      </div>
+
+                      <!-- ////////////////////////////////////// -->
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-xl">روزانه</span>
+                      </div>
+                    </div>
+
+                    <!--------------------- 2 --------------------->
+
+                    <div
+                      class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
+                    >
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-lg">
+                          از 1 تا 30 روز:</span
+                        >
+                        <span class="text-primary md:text-lg">8,500,000</span>
+                      </div>
+
+                      <!-- ////////////////////////////////////// -->
+
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-xl">ماهانه</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--------------------- Request --------------------->
+
+                  <div class="w-full h-20 px-5 flex flex-col gap-y-3">
+                    <div class="w-full h-10 flex-between">
+                      <span class="text-stone-800 md:text-xl">مبلغ ضمانت:</span>
+                      <span class="text-stone-800 md:text-lg"
+                        >80 میلیون تومان</span
+                      >
+                    </div>
+
+                    <!--------------------- Button --------------------->
+
+                    <div class="w-full h-fit">
+                      <button
+                        type="button"
+                        class="w-full h-10 p-2 flex-center bg-primary text-white border border-stone-300 text-nowrap font-Estedad-SemiBold focus:z-10 border-gray-200-gray-800 hover:bg-secondary/80 hover:text-black focus:outline-hidden focus:bg-primary/90 focus:border-white focus:text-white disabled:opacity-50 disabled:pointer-events-none rounded-lg transition-colors md:text-lg"
+                      >
+                        درخواست رزرو
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--------------------- Card 3 --------------------->
+
+              <div class="swiper-slide">
+                <div class="w-full h-fit flex flex-col gap-y-3">
+                  <!--------------------- img --------------------->
+
+                  <div class="w-full h-fit flex-center flex-col">
+                    <img
+                      src="./Picture/Car-Picture/Sedan/Sedan-swiper-2.jpg"
+                      class="w-full h-120 object-cover rounded-t-xl"
+                    />
+                  </div>
+
+                  <!--------------------- Info --------------------->
+
+                  <div class="w-full h-20 flex flex-col gap-y-3 px-5">
+                    <h2 class="font-Estedad-Bold text-stone-800">
+                      اجاره سدان آئودی
+                    </h2>
+                    <span class="text-stone-800">مدل : 2016</span>
+                  </div>
+
+                  <!--------------------- Price --------------------->
+
+                  <div class="w-full h-30 flex flex-col gap-y-3 px-5">
+                    <!--------------------- 1 --------------------->
+
+                    <div
+                      class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
+                    >
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-lg">
+                          از 1 تا 30 روز:</span
+                        >
+                        <span class="text-primary md:text-lg">8,500,000</span>
+                      </div>
+
+                      <!-- ////////////////////////////////////// -->
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-xl">روزانه</span>
+                      </div>
+                    </div>
+
+                    <!--------------------- 2 --------------------->
+
+                    <div
+                      class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
+                    >
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-lg">
+                          از 1 تا 30 روز:</span
+                        >
+                        <span class="text-primary md:text-lg">8,500,000</span>
+                      </div>
+
+                      <!-- ////////////////////////////////////// -->
+
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-xl">ماهانه</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--------------------- Request --------------------->
+
+                  <div class="w-full h-20 px-5 flex flex-col gap-y-3">
+                    <div class="w-full h-10 flex-between">
+                      <span class="text-stone-800 md:text-xl">مبلغ ضمانت:</span>
+                      <span class="text-stone-800 md:text-lg"
+                        >80 میلیون تومان</span
+                      >
+                    </div>
+
+                    <!--------------------- Button --------------------->
+
+                    <div class="w-full h-fit">
+                      <button
+                        type="button"
+                        class="w-full h-10 p-2 flex-center bg-primary text-white border border-stone-300 text-nowrap font-Estedad-SemiBold focus:z-10 border-gray-200-gray-800 hover:bg-secondary/80 hover:text-black focus:outline-hidden focus:bg-primary/90 focus:border-white focus:text-white disabled:opacity-50 disabled:pointer-events-none rounded-lg transition-colors md:text-lg"
+                      >
+                        درخواست رزرو
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--------------------- Card 4 --------------------->
+
+              <div class="swiper-slide">
+                <div class="w-full h-fit flex flex-col gap-y-3">
+                  <!--------------------- img --------------------->
+
+                  <div class="w-full h-fit flex-center flex-col">
+                    <img
+                      src="./Picture/Car-Picture/Convertible/Benz Convertible-swiper-2.jpg"
+                      class="w-full h-120 object-cover rounded-t-xl"
+                    />
+                  </div>
+
+                  <!--------------------- Info --------------------->
+
+                  <div class="w-full h-20 flex flex-col gap-y-3 px-5">
+                    <h2 class="font-Estedad-Bold text-stone-800">
+                      اجاره بنز کروک
+                    </h2>
+                    <span class="text-stone-800">مدل : 2016</span>
+                  </div>
+
+                  <!--------------------- Price --------------------->
+
+                  <div class="w-full h-30 flex flex-col gap-y-3 px-5">
+                    <!--------------------- 1 --------------------->
+
+                    <div
+                      class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
+                    >
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-lg">
+                          از 1 تا 30 روز:</span
+                        >
+                        <span class="text-primary md:text-lg">8,500,000</span>
+                      </div>
+
+                      <!-- ////////////////////////////////////// -->
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-xl">روزانه</span>
+                      </div>
+                    </div>
+
+                    <!--------------------- 2 --------------------->
+
+                    <div
+                      class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
+                    >
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-lg">
+                          از 1 تا 30 روز:</span
+                        >
+                        <span class="text-primary md:text-lg">8,500,000</span>
+                      </div>
+
+                      <!-- ////////////////////////////////////// -->
+
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-xl">ماهانه</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--------------------- Request --------------------->
+
+                  <div class="w-full h-20 px-5 flex flex-col gap-y-3">
+                    <div class="w-full h-10 flex-between">
+                      <span class="text-stone-800 md:text-xl">مبلغ ضمانت:</span>
+                      <span class="text-stone-800 md:text-lg"
+                        >80 میلیون تومان</span
+                      >
+                    </div>
+
+                    <!--------------------- Button --------------------->
+
+                    <div class="w-full h-fit">
+                      <button
+                        type="button"
+                        class="w-full h-10 p-2 flex-center bg-primary text-white border border-stone-300 text-nowrap font-Estedad-SemiBold focus:z-10 border-gray-200-gray-800 hover:bg-secondary/80 hover:text-black focus:outline-hidden focus:bg-primary/90 focus:border-white focus:text-white disabled:opacity-50 disabled:pointer-events-none rounded-lg transition-colors md:text-lg"
+                      >
+                        درخواست رزرو
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--------------------- Card 5 --------------------->
+
+              <div class="swiper-slide">
+                <div class="w-full h-fit flex flex-col gap-y-3">
+                  <!--------------------- img --------------------->
+
+                  <div class="w-full h-fit flex-center flex-col">
+                    <img
+                      src="./Picture/Car-Picture/SUV/Toyota Land cruiser 300-swiper-2.jpg"
+                      class="w-full h-120 object-cover rounded-t-xl"
+                    />
+                  </div>
+
+                  <!--------------------- Info --------------------->
+
+                  <div class="w-full h-20 flex flex-col gap-y-3 px-5">
+                    <h2 class="font-Estedad-Bold text-stone-800">
+                      اجاره تویوتا لندکروز
+                    </h2>
+                    <span class="text-stone-800">مدل : 2016</span>
+                  </div>
+
+                  <!--------------------- Price --------------------->
+
+                  <div class="w-full h-30 flex flex-col gap-y-3 px-5">
+                    <!--------------------- 1 --------------------->
+
+                    <div
+                      class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
+                    >
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-lg">
+                          از 1 تا 30 روز:</span
+                        >
+                        <span class="text-primary md:text-lg">8,500,000</span>
+                      </div>
+
+                      <!-- ////////////////////////////////////// -->
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-xl">روزانه</span>
+                      </div>
+                    </div>
+
+                    <!--------------------- 2 --------------------->
+
+                    <div
+                      class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
+                    >
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-lg">
+                          از 1 تا 30 روز:</span
+                        >
+                        <span class="text-primary md:text-lg">8,500,000</span>
+                      </div>
+
+                      <!-- ////////////////////////////////////// -->
+
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-xl">ماهانه</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--------------------- Request --------------------->
+
+                  <div class="w-full h-20 px-5 flex flex-col gap-y-3">
+                    <div class="w-full h-10 flex-between">
+                      <span class="text-stone-800 md:text-xl">مبلغ ضمانت:</span>
+                      <span class="text-stone-800 md:text-lg"
+                        >80 میلیون تومان</span
+                      >
+                    </div>
+
+                    <!--------------------- Button --------------------->
+
+                    <div class="w-full h-fit">
+                      <button
+                        type="button"
+                        class="w-full h-10 p-2 flex-center bg-primary text-white border border-stone-300 text-nowrap font-Estedad-SemiBold focus:z-10 border-gray-200-gray-800 hover:bg-secondary/80 hover:text-black focus:outline-hidden focus:bg-primary/90 focus:border-white focus:text-white disabled:opacity-50 disabled:pointer-events-none rounded-lg transition-colors md:text-lg"
+                      >
+                        درخواست رزرو
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--------------------- Card 6 --------------------->
+
+              <div class="swiper-slide">
+                <div class="w-full h-fit flex flex-col gap-y-3">
+                  <!--------------------- img --------------------->
+
+                  <div class="w-full h-fit flex-center flex-col">
+                    <img
+                      src="./Picture/Car-Picture/Hatchback/BMW 1 Series Hatchback -swiper-2.jpg"
+                      class="w-full h-120 object-cover rounded-t-xl"
+                    />
+                  </div>
+
+                  <!--------------------- Info --------------------->
+
+                  <div class="w-full h-20 flex flex-col gap-y-3 px-5">
+                    <h2 class="font-Estedad-Bold text-stone-800">
+                      اجاره بی ام و هاچبک
+                    </h2>
+                    <span class="text-stone-800">مدل : 2016</span>
+                  </div>
+
+                  <!--------------------- Price --------------------->
+
+                  <div class="w-full h-30 flex flex-col gap-y-3 px-5">
+                    <!--------------------- 1 --------------------->
+
+                    <div
+                      class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
+                    >
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-lg">
+                          از 1 تا 30 روز:</span
+                        >
+                        <span class="text-primary md:text-lg">8,500,000</span>
+                      </div>
+
+                      <!-- ////////////////////////////////////// -->
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-xl">روزانه</span>
+                      </div>
+                    </div>
+
+                    <!--------------------- 2 --------------------->
+
+                    <div
+                      class="w-full h-15 flex-between px-3 bg-stone-200 rounded-md"
+                    >
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-lg">
+                          از 1 تا 30 روز:</span
+                        >
+                        <span class="text-primary md:text-lg">8,500,000</span>
+                      </div>
+
+                      <!-- ////////////////////////////////////// -->
+
+                      <div class="w-fit h-fit">
+                        <span class="text-stone-800 md:text-xl">ماهانه</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--------------------- Request --------------------->
+
+                  <div class="w-full h-20 px-5 flex flex-col gap-y-3">
+                    <div class="w-full h-10 flex-between">
+                      <span class="text-stone-800 md:text-xl">مبلغ ضمانت:</span>
+                      <span class="text-stone-800 md:text-lg"
+                        >80 میلیون تومان</span
+                      >
+                    </div>
+
+                    <!--------------------- Button --------------------->
+
+                    <div class="w-full h-fit">
+                      <button
+                        type="button"
+                        class="w-full h-10 p-2 flex-center bg-primary text-white border border-stone-300 text-nowrap font-Estedad-SemiBold focus:z-10 border-gray-200-gray-800 hover:bg-secondary/80 hover:text-black focus:outline-hidden focus:bg-primary/90 focus:border-white focus:text-white disabled:opacity-50 disabled:pointer-events-none rounded-lg transition-colors md:text-lg"
+                      >
+                        درخواست رزرو
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination flex-center mt-5 gap-x-5"></div>
+          </div>
+
+          <!--------------------- swiper-3 End --------------------->
+        </div>
 
         <!--------------------------- Pc End --------------------------->
 
@@ -4085,7 +4792,7 @@
 
         <!--------------------- tutorial Start --------------------->
 
-        <div class="w-full h-fit flex flex-col gap-y-10 relative">
+        <div class="w-full h-fit flex flex-col gap-y-10 relative select-none">
           <!--------------------- Title --------------------->
 
           <div class="w-full h-fit flex-center flex-col gap-y-2 select-none">
@@ -4346,19 +5053,20 @@
 
             <!--------------------- Steps Tablet --------------------->
 
-            <div class="w-full h-50 md:grid grid-cols-3 hidden">
+            <div class="w-full h-50 md:grid grid-cols-3 lg:flex hidden">
               <!--------------------- Step-1 --------------------->
 
-              <div class="w-full h-fit col-start-1">
-                <div class="w-fit h-fit flex flex-col gap-y-2">
-                  <span class="font-Estedad-ExtraBold text-md">
+              <div class="w-full h-fit col-start-1 lg:flex">
+                <div class="w-fit h-fit flex flex-col gap-y-2 lg:w-[50%]">
+                  <span class="font-Estedad-ExtraBold text-md lg:text-xl">
                     ۱ـ
-                    <span class="font-Estedad-ExtraBold text-md text-secondary"
+                    <span
+                      class="font-Estedad-ExtraBold text-md text-secondary lg:text-xl"
                       >خودروی</span
                     >
                     خود را انتخاب کنید.
                   </span>
-                  <p class="text-sm text-justify xl:w-[60%]">
+                  <p class="text-sm text-justify lg:text-lg">
                     خودروی مورد نظر خود را،متناسب با در خواست خود انتخاب کنید.
                   </p>
                 </div>
@@ -4366,35 +5074,39 @@
 
               <!--------------------- Step-2 --------------------->
 
-              <div class="w-full h-fit col-end-4">
-                <div class="w-full h-fit">
-                  <span class="font-Estedad-ExtraBold text-md">
+              <div class="w-full h-fit col-end-4 lg:flex lg:justify-end">
+                <div class="w-fit h-fit flex flex-col gap-y-2 lg:w-[50%]">
+                  <span class="font-Estedad-ExtraBold text-md lg:text-xl">
                     ۲ـ
-                    <span class="font-Estedad-ExtraBold text-md text-secondary"
+                    <span
+                      class="font-Estedad-ExtraBold text-md text-secondary lg:text-xl"
                       >تاریخ</span
                     >
                     تحویل را تعیین کنید.
                   </span>
-                  <p class="text-sm text-justify xl:w-[60%]">
+                  <p class="text-sm text-justify lg:text-lg">
                     تاریخ موردنظر خود را از تقویم، انتخاب و رزرو کنید
                   </p>
                 </div>
               </div>
             </div>
 
-            <div class="w-full h-50 md:grid grid-cols-3 hidden">
+            <div
+              class="w-full h-50 md:grid grid-cols-3 lg:flex lg:items-end hidden"
+            >
               <!--------------------- Step-3 --------------------->
 
-              <div class="w-full h-fit col-start-1">
-                <div class="w-fit h-fit flex flex-col gap-y-2">
-                  <span class="font-Estedad-ExtraBold text-md">
+              <div class="w-full h-fit col-start-1 lg:flex">
+                <div class="w-fit h-fit flex flex-col gap-y-2 lg:w-[50%]">
+                  <span class="font-Estedad-ExtraBold text-md lg:text-xl">
                     ۳ـ
-                    <span class="font-Estedad-ExtraBold text-md text-secondary"
+                    <span
+                      class="font-Estedad-ExtraBold text-md text-secondary lg:text-xl"
                       >هزینه</span
                     >
                     اجاره را پرداخت کنید.
                   </span>
-                  <p class="text-sm text-justify xl:w-[60%]">
+                  <p class="text-sm text-justify lg:text-lg">
                     می توانید از طریق کیف پول آنلاین یا کارت های عضو شبکه شتاب
                     هزینه اجاره را پرداخت کنید.
                   </p>
@@ -4403,16 +5115,17 @@
 
               <!--------------------- Step-4 --------------------->
 
-              <div class="w-full h-fit col-end-4">
-                <div class="w-full h-fit flex flex-col gap-y-2">
-                  <span class="font-Estedad-ExtraBold text-md">
+              <div class="w-full h-fit col-end-4 lg:flex lg:justify-end">
+                <div class="w-fit h-fit flex flex-col gap-y-2 lg:w-[50%]">
+                  <span class="font-Estedad-ExtraBold text-md lg:text-xl">
                     ۴ـ
-                    <span class="font-Estedad-ExtraBold text-md text-secondary"
+                    <span
+                      class="font-Estedad-ExtraBold text-md text-secondary lg:text-xl"
                       >خودرو</span
                     >
                     را دریافت کنید.
                   </span>
-                  <p class="text-sm text-justify xl:w-[60%]">
+                  <p class="text-sm text-justify lg:text-lg">
                     در زمان و مکان تعیین شده، خودروی خود را دریافت کنید.
                   </p>
                 </div>
@@ -4422,35 +5135,39 @@
             <!--------------------- bg-img Start --------------------->
 
             <div
-              class="w-1/3 h-100 md:h-110 flex-center md:absolute top-0 left-0 md:right-57 md:top-20 xl:top-30  xl:right-95 2xl:right-120 relative overflow-hidden"
+              class="w-1/3 h-100 md:h-110 flex-center md:absolute top-0 left-0 md:right-57 md:top-20 lg:right-75 lg:top-25 xl:top-30 xl:right-95 2xl:right-127 relative overflow-hidden"
             >
-              <img src="./Picture/bg-image/bg-image-2.png" alt="" class="md:h-100 xl:h-110 2xl:h-100" />
+              <img
+                src="./Picture/bg-image/bg-image-2.png"
+                alt=""
+                class="md:h-100 xl:h-110 2xl:h-100"
+              />
 
               <!--------------------- Light-Top-Right --------------------->
 
               <div
-                class="absolute top-18 md:top-7 left-21 md:left-40 xl:left-60 xl:top-1 -translate-y-1/2 w-20 h-20 bg-linear-to-r from-yellow-200/70 to-transparent blur-md -rotate-55"
+                class="absolute top-18 md:top-7 left-21 md:left-40 lg:left-47 xl:left-60 xl:top-1 2xl:top-8 2xl:left-75 -translate-y-1/2 w-20 h-20 bg-linear-to-r from-yellow-200/70 to-transparent blur-md -rotate-55"
                 style="clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 60%)"
               ></div>
 
               <!--------------------- Light-Top-Left --------------------->
 
               <div
-                class="absolute top-18 md:top-7 right-21 md:right-40 xl:right-60 xl:top-1 -translate-y-1/2 w-20 h-20 bg-linear-to-r from-yellow-200/70 to-transparent blur-md -rotate-125"
+                class="absolute top-18 md:top-7 right-21 md:right-40 lg:right-47 xl:right-60 xl:top-1 2xl:top-8 2xl:right-75 -translate-y-1/2 w-20 h-20 bg-linear-to-r from-yellow-200/70 to-transparent blur-md -rotate-125"
                 style="clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 60%)"
               ></div>
 
               <!--------------------- Light-Bottom-Right --------------------->
 
               <div
-                class="absolute -bottom-5 md:-bottom-16 left-17.5 md:left-37 xl:left-58 xl:-bottom-20 -translate-y-1/2 w-20 h-20 bg-linear-to-r from-red-200/70 to-transparent blur-md rotate-70"
+                class="absolute -bottom-6.5 md:-bottom-16 left-19 md:left-37 lg:left-47 xl:left-58 xl:-bottom-20 2xl:-bottom-15.5 2xl:left-73 -translate-y-1/2 w-20 h-20 bg-linear-to-r from-red-200/70 to-transparent blur-md rotate-70"
                 style="clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 60%)"
               ></div>
 
               <!--------------------- Light-Bottom-Left --------------------->
 
               <div
-                class="absolute -bottom-5 md:-bottom-16 right-17.5 md:right-37 xl:right-58 xl:-bottom-20 -translate-y-1/2 w-20 h-20 bg-linear-to-r from-red-200/70 to-transparent blur-md rotate-110"
+                class="absolute -bottom-6.5 md:-bottom-16 right-19 md:right-37 lg:right-47 xl:right-58 xl:-bottom-20 2xl:-bottom-15.5 2xl:right-73 -translate-y-1/2 w-20 h-20 bg-linear-to-r from-red-200/70 to-transparent blur-md rotate-110"
                 style="clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 60%)"
               ></div>
 
@@ -4468,14 +5185,15 @@
           <div class="w-full h-fit flex-center flex-col gap-y-2 select-none">
             <div class="w-[60%] h-fit flex-center flex-col gap-y-2">
               <div class="w-fit h-fit">
-                <span class="font-Estedad-ExtraLight">
+                <span class="font-Estedad-ExtraLight lg:text-2xl">
                   پر تکرارترین سؤالاتی که پرسیدید</span
                 >
               </div>
               <div class="w-fit h-fit">
-                <span class="font-Estedad-ExtraBold text-2xl">
+                <span class="font-Estedad-ExtraBold text-2xl lg:text-4xl">
                   سؤالات
-                  <span class="font-Estedad-ExtraBold text-secondary text-2xl"
+                  <span
+                    class="font-Estedad-ExtraBold text-secondary text-2xl lg:text-4xl"
                     >متداول</span
                   >
                 </span>
@@ -4483,214 +5201,216 @@
             </div>
           </div>
 
-          <!--------------------- bg-img Start --------------------->
+          <div class="w-full h-fit lg:flex lg:flex-row-reverse">
+            <!--------------------- bg-img Start --------------------->
 
-          <div
-            class="w-full h-50 flex justify-end bg-[url(/Picture/bg-image/bg-image-3.jpg)] bg-contain bg-repeat"
-          >
-            <img
-              src="./Picture/etc/question.png"
-              alt=""
-              class="w-1/2 h-50 object-cover"
-            />
+            <div
+              class="w-full h-50 flex justify-end bg-[url(/Picture/bg-image/bg-image-3.jpg)] bg-contain bg-repeat lg:bg-none"
+            >
+              <img
+                src="./Picture/etc/question.png"
+                alt=""
+                class="w-1/2 h-full object-cover lg:rounded-xl"
+              />
+            </div>
+
+            <!--------------------- bg-img End --------------------->
+
+            <!-- Accordion Group-2 -->
+
+            <div
+              class="w-full h-fit hs-accordion-group flex flex-col gap-y-3 select-none"
+            >
+              <!--------------------- Step-1 --------------------->
+
+              <div
+                class="hs-accordion bg-stone-200 rounded-lg px-3"
+                id="hs-basic-heading-one-2"
+              >
+                <button
+                  class="hs-accordion-toggle hs-accordion-active:text-primary-active py-3 inline-flex items-center gap-x-3 w-full font-semibold text-start text-foreground rounded-lg disabled:opacity-50 disabled:pointer-events-none"
+                  aria-expanded="false"
+                  aria-controls="hs-basic-collapse-one-2"
+                >
+                  <!--------------------- SVG --------------------->
+
+                  <svg
+                    class="hs-accordion-active:hidden block size-4"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="#Plus"></use>
+                  </svg>
+                  <svg
+                    class="hs-accordion-active:block hidden size-4"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="#Minus"></use>
+                  </svg>
+
+                  <!--------------------- SVG --------------------->
+
+                  <span class="font-Estedad-ExtraBold text-xs">
+                    در صورت بروز نقص فنی برای خودرو چه اتفاقی می افتد؟
+                  </span>
+                </button>
+                <div
+                  id="hs-basic-collapse-one-2"
+                  class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                  role="region"
+                  aria-labelledby="hs-basic-heading-one-2"
+                >
+                  <p class="text-sm text-justify leading-7">
+                    هیچ اتفاقی نمی افتد.
+                  </p>
+                </div>
+              </div>
+
+              <!--------------------- Step-2 --------------------->
+
+              <div
+                class="hs-accordion bg-stone-200 rounded-lg px-3"
+                id="hs-basic-heading-two-2"
+              >
+                <button
+                  class="hs-accordion-toggle hs-accordion-active:text-primary-active py-3 inline-flex items-center gap-x-3 w-full font-semibold text-start text-foreground rounded-lg disabled:opacity-50 disabled:pointer-events-none"
+                  aria-expanded="false"
+                  aria-controls="hs-basic-collapse-two-2"
+                >
+                  <!--------------------- SVG --------------------->
+
+                  <svg
+                    class="hs-accordion-active:hidden block size-4"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="#Plus"></use>
+                  </svg>
+                  <svg
+                    class="hs-accordion-active:block hidden size-4"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="#Minus"></use>
+                  </svg>
+
+                  <!--------------------- SVG --------------------->
+
+                  <span class="font-Estedad-ExtraBold text-xs">
+                    هزینه بنزین و کارواش در خودروهای اجاره ای به عهده کیست؟
+                  </span>
+                </button>
+                <div
+                  id="hs-basic-collapse-two-2"
+                  class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                  role="region"
+                  aria-labelledby="hs-basic-heading-two-2"
+                >
+                  <p class="text-sm text-justify">
+                    در زمان اجاره خودرو بدون راننده خودروها کارواش شده و با باک
+                    بنزین پر تحویل مشتریان عزیز می گردد. در زمان استرداد خودرو
+                    در صورتی که خودرو به کارواش نیاز داشته و یا خودرو دارای کسر
+                    سوخت باشد هزینه آن بر عهده مشتری می باشد.
+                  </p>
+                </div>
+              </div>
+
+              <!--------------------- Step-3 --------------------->
+
+              <div
+                class="hs-accordion bg-stone-200 rounded-lg px-3"
+                id="hs-basic-heading-three-2"
+              >
+                <button
+                  class="hs-accordion-toggle hs-accordion-active:text-primary-active py-3 inline-flex items-center gap-x-3 w-full font-semibold text-start text-foreground rounded-lg disabled:opacity-50 disabled:pointer-events-none"
+                  aria-expanded="false"
+                  aria-controls="hs-basic-collapse-three-2"
+                >
+                  <!--------------------- SVG --------------------->
+
+                  <!--------------------- SVG --------------------->
+
+                  <svg
+                    class="hs-accordion-active:hidden block size-4"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="#Plus"></use>
+                  </svg>
+                  <svg
+                    class="hs-accordion-active:block hidden size-4"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="#Minus"></use>
+                  </svg>
+
+                  <!--------------------- SVG --------------------->
+
+                  <!--------------------- SVG --------------------->
+
+                  <span class="font-Estedad-ExtraBold text-xs">
+                    آیا ماشین های اتورنت دارای بیمه هستند؟
+                  </span>
+                </button>
+                <div
+                  id="hs-basic-collapse-three-2"
+                  class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                  role="region"
+                  aria-labelledby="hs-basic-heading-three-2"
+                >
+                  <p class="text-sm text-justify leading-7">خیر</p>
+                </div>
+              </div>
+
+              <!--------------------- Step-4 --------------------->
+
+              <div
+                class="hs-accordion bg-stone-200 rounded-lg px-3"
+                id="hs-basic-heading-four-2"
+              >
+                <button
+                  class="hs-accordion-toggle hs-accordion-active:text-primary-active py-3 inline-flex items-center gap-x-3 w-full font-semibold text-start text-foreground rounded-lg disabled:opacity-50 disabled:pointer-events-none"
+                  aria-expanded="false"
+                  aria-controls="hs-basic-collapse-four-2"
+                >
+                  <!--------------------- SVG --------------------->
+
+                  <svg
+                    class="hs-accordion-active:hidden block size-4"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="#Plus"></use>
+                  </svg>
+                  <svg
+                    class="hs-accordion-active:block hidden size-4"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="#Minus"></use>
+                  </svg>
+
+                  <!--------------------- SVG --------------------->
+
+                  <span class="font-Estedad-ExtraBold text-xs">
+                    محدودیت کیلومتر در اجاره خودرو چقدر می باشد؟
+                  </span>
+                </button>
+                <div
+                  id="hs-basic-collapse-four-2"
+                  class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                  role="region"
+                  aria-labelledby="hs-basic-heading-four-2"
+                >
+                  <p class="text-sm text-justify">نامحدود</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- End Accordion Group-2 -->
           </div>
-
-          <!--------------------- bg-img End --------------------->
-
-          <!-- Accordion Group-2 -->
-
-          <div
-            class="w-full h-fit hs-accordion-group flex flex-col gap-y-3 select-none"
-          >
-            <!--------------------- Step-1 --------------------->
-
-            <div
-              class="hs-accordion bg-stone-200 rounded-lg px-3"
-              id="hs-basic-heading-one-2"
-            >
-              <button
-                class="hs-accordion-toggle hs-accordion-active:text-primary-active py-3 inline-flex items-center gap-x-3 w-full font-semibold text-start text-foreground rounded-lg disabled:opacity-50 disabled:pointer-events-none"
-                aria-expanded="false"
-                aria-controls="hs-basic-collapse-one-2"
-              >
-                <!--------------------- SVG --------------------->
-
-                <svg
-                  class="hs-accordion-active:hidden block size-4"
-                  width="24"
-                  height="24"
-                >
-                  <use href="#Plus"></use>
-                </svg>
-                <svg
-                  class="hs-accordion-active:block hidden size-4"
-                  width="24"
-                  height="24"
-                >
-                  <use href="#Minus"></use>
-                </svg>
-
-                <!--------------------- SVG --------------------->
-
-                <span class="font-Estedad-ExtraBold text-xs">
-                  در صورت بروز نقص فنی برای خودرو چه اتفاقی می افتد؟
-                </span>
-              </button>
-              <div
-                id="hs-basic-collapse-one-2"
-                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-                role="region"
-                aria-labelledby="hs-basic-heading-one-2"
-              >
-                <p class="text-sm text-justify leading-7">
-                  هیچ اتفاقی نمی افتد.
-                </p>
-              </div>
-            </div>
-
-            <!--------------------- Step-2 --------------------->
-
-            <div
-              class="hs-accordion bg-stone-200 rounded-lg px-3"
-              id="hs-basic-heading-two-2"
-            >
-              <button
-                class="hs-accordion-toggle hs-accordion-active:text-primary-active py-3 inline-flex items-center gap-x-3 w-full font-semibold text-start text-foreground rounded-lg disabled:opacity-50 disabled:pointer-events-none"
-                aria-expanded="false"
-                aria-controls="hs-basic-collapse-two-2"
-              >
-                <!--------------------- SVG --------------------->
-
-                <svg
-                  class="hs-accordion-active:hidden block size-4"
-                  width="24"
-                  height="24"
-                >
-                  <use href="#Plus"></use>
-                </svg>
-                <svg
-                  class="hs-accordion-active:block hidden size-4"
-                  width="24"
-                  height="24"
-                >
-                  <use href="#Minus"></use>
-                </svg>
-
-                <!--------------------- SVG --------------------->
-
-                <span class="font-Estedad-ExtraBold text-xs">
-                  هزینه بنزین و کارواش در خودروهای اجاره ای به عهده کیست؟
-                </span>
-              </button>
-              <div
-                id="hs-basic-collapse-two-2"
-                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-                role="region"
-                aria-labelledby="hs-basic-heading-two-2"
-              >
-                <p class="text-sm text-justify">
-                  در زمان اجاره خودرو بدون راننده خودروها کارواش شده و با باک
-                  بنزین پر تحویل مشتریان عزیز می گردد. در زمان استرداد خودرو در
-                  صورتی که خودرو به کارواش نیاز داشته و یا خودرو دارای کسر سوخت
-                  باشد هزینه آن بر عهده مشتری می باشد.
-                </p>
-              </div>
-            </div>
-
-            <!--------------------- Step-3 --------------------->
-
-            <div
-              class="hs-accordion bg-stone-200 rounded-lg px-3"
-              id="hs-basic-heading-three-2"
-            >
-              <button
-                class="hs-accordion-toggle hs-accordion-active:text-primary-active py-3 inline-flex items-center gap-x-3 w-full font-semibold text-start text-foreground rounded-lg disabled:opacity-50 disabled:pointer-events-none"
-                aria-expanded="false"
-                aria-controls="hs-basic-collapse-three-2"
-              >
-                <!--------------------- SVG --------------------->
-
-                <!--------------------- SVG --------------------->
-
-                <svg
-                  class="hs-accordion-active:hidden block size-4"
-                  width="24"
-                  height="24"
-                >
-                  <use href="#Plus"></use>
-                </svg>
-                <svg
-                  class="hs-accordion-active:block hidden size-4"
-                  width="24"
-                  height="24"
-                >
-                  <use href="#Minus"></use>
-                </svg>
-
-                <!--------------------- SVG --------------------->
-
-                <!--------------------- SVG --------------------->
-
-                <span class="font-Estedad-ExtraBold text-xs">
-                  آیا ماشین های اتورنت دارای بیمه هستند؟
-                </span>
-              </button>
-              <div
-                id="hs-basic-collapse-three-2"
-                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-                role="region"
-                aria-labelledby="hs-basic-heading-three-2"
-              >
-                <p class="text-sm text-justify leading-7">خیر</p>
-              </div>
-            </div>
-
-            <!--------------------- Step-4 --------------------->
-
-            <div
-              class="hs-accordion bg-stone-200 rounded-lg px-3"
-              id="hs-basic-heading-four-2"
-            >
-              <button
-                class="hs-accordion-toggle hs-accordion-active:text-primary-active py-3 inline-flex items-center gap-x-3 w-full font-semibold text-start text-foreground rounded-lg disabled:opacity-50 disabled:pointer-events-none"
-                aria-expanded="false"
-                aria-controls="hs-basic-collapse-four-2"
-              >
-                <!--------------------- SVG --------------------->
-
-                <svg
-                  class="hs-accordion-active:hidden block size-4"
-                  width="24"
-                  height="24"
-                >
-                  <use href="#Plus"></use>
-                </svg>
-                <svg
-                  class="hs-accordion-active:block hidden size-4"
-                  width="24"
-                  height="24"
-                >
-                  <use href="#Minus"></use>
-                </svg>
-
-                <!--------------------- SVG --------------------->
-
-                <span class="font-Estedad-ExtraBold text-xs">
-                  محدودیت کیلومتر در اجاره خودرو چقدر می باشد؟
-                </span>
-              </button>
-              <div
-                id="hs-basic-collapse-four-2"
-                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-                role="region"
-                aria-labelledby="hs-basic-heading-four-2"
-              >
-                <p class="text-sm text-justify">نامحدود</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- End Accordion Group-2 -->
         </div>
 
         <!--------------------- Question End --------------------->
@@ -4701,14 +5421,15 @@
           <div class="w-full h-fit flex-center flex-col gap-y-2 select-none">
             <div class="w-[60%] h-fit flex-center flex-col gap-y-2">
               <div class="w-fit h-fit">
-                <span class="font-Estedad-ExtraLight">
+                <span class="font-Estedad-ExtraLight lg:text-2xl">
                   آنچه مشتریان ما درموردمان گفته‌اند.</span
                 >
               </div>
               <div class="w-fit h-fit">
-                <span class="font-Estedad-ExtraBold text-2xl">
+                <span class="font-Estedad-ExtraBold text-2xl lg:text-4xl">
                   نظرات
-                  <span class="font-Estedad-ExtraBold text-secondary text-2xl"
+                  <span
+                    class="font-Estedad-ExtraBold text-secondary text-2xl lg:text-4xl"
                     >مشتریان</span
                   >
                 </span>
@@ -5282,19 +6003,25 @@
 
             <div class="w-fit h-fit flex-center flex-col flex-1 gap-y-2">
               <div class="w-fit h-fit">
-                <span class="font-Estedad-ExtraLight"> مقالات ما</span>
+                <span class="font-Estedad-ExtraLight lg:text-2xl">
+                  مقالات ما</span
+                >
               </div>
               <div class="w-fit h-fit">
-                <span class="font-Estedad-ExtraBold text-2xl">
+                <span class="font-Estedad-ExtraBold text-2xl lg:text-4xl">
                   مجله
-                  <span class="font-Estedad-ExtraBold text-secondary text-2xl"
+                  <span
+                    class="font-Estedad-ExtraBold text-secondary text-2xl lg:text-4xl"
                     >خودرو</span
                   >
                 </span>
               </div>
             </div>
             <div class="w-fit h-14 flex-end gap-x-2 flex-1">
-              <a href="#" class="w-fit h-fit text-primary text-xs"
+              <a
+                href="./blog.html"
+                target="_blank"
+                class="w-fit h-fit text-primary text-xs"
                 >مشاهده همه</a
               >
 
@@ -5307,7 +6034,9 @@
               <!--------------------- SVG --------------------->
             </div>
           </div>
-          <div class="w-full h-fit flex-center flex-col gap-y-4">
+          <div
+            class="w-full h-fit flex-center flex-col gap-y-4 lg:flex-row lg:gap-x-10"
+          >
             <!--------------------- Card-1 --------------------->
 
             <div class="w-[90%] h-fit flex flex-col bg-white rounded-xl">
@@ -5475,9 +6204,11 @@
 
     <!--------------------- Container-Footer Start --------------------->
 
-    <footer class="w-full h-fit mt-10 mb-12 md:mb-0">
+    <footer class="w-full h-fit mt-10 mb-12 md:mb-15 lg:mb-0">
       <div class="container mx-auto relative">
-        <div class="w-full h-fit flex flex-col gap-y-3 bg-gray-800">
+        <div
+          class="w-full h-fit flex flex-col gap-y-3 bg-gray-800 lg:rounded-t-xl"
+        >
           <!--------------------- Contact Start --------------------->
 
           <div
@@ -5553,12 +6284,21 @@
 
           <div class="w-full h-fit flex-center grid px-5">
             <ul
-              class="w-full h-fit grid grid-cols-3 justify-items-center gap-y-7 py-2"
+              class="w-full h-fit grid grid-cols-3 justify-items-center md:items-center gap-y-7 py-2"
             >
               <!--------------------- About Start --------------------->
 
-              <li class="w-fit h-fit col-span-3 flex-center flex-col gap-y-2">
-                <img src="./Picture/etc/default.svg" alt="" />
+              <li
+                class="w-fit h-fit col-span-3 md:col-span-1 flex-center flex-col gap-y-2"
+              >
+                <div class="">
+                  <img src="./Picture/etc/default.svg" alt="" />
+                  <span class="text-white font-Estedad-SemiBold">
+                    اُتـــو<span class="text-secondary font-Estedad-SemiBold"
+                      >رنت</span
+                    ></span
+                  >
+                </div>
                 <p class="text-center text-stone-300">
                   اتورنت با رویکرد اعتماد به مشتری، با در اختیار داشتن بزرگترین
                   ناوگان خودرویی متشکل از انواع خودروهای صفر کیلومتر، اقتصادی تا
@@ -5571,31 +6311,31 @@
               <!--------------------- Access Start --------------------->
 
               <li class="w-full h-fit col-span-1 justify-items-start">
-                <ul class="w-full h-fit flex-right flex-col gap-y-2">
+                <ul class="w-full h-fit flex flex-col gap-y-2">
                   <!--------------------- item-1 --------------------->
 
-                  <li class="w-full h-fit">
+                  <li class="w-full h-fit md:flex md:justify-center">
                     <span class="font-Estedad-Medium text-stone-300">
                       دسترسی آسان
                     </span>
                   </li>
                   <!--------------------- item-1 --------------------->
 
-                  <li class="w-full h-fit">
+                  <li class="w-full h-fit md:flex md:justify-center">
                     <span class="font-Estedad-Medium text-stone-300">
                       سوالات متداول
                     </span>
                   </li>
                   <!--------------------- item-1 --------------------->
 
-                  <li class="w-full h-fit">
+                  <li class="w-full h-fit md:flex md:justify-center">
                     <span class="font-Estedad-Medium text-stone-300">
                       تماس با ما
                     </span>
                   </li>
                   <!--------------------- item-1 --------------------->
 
-                  <li class="w-full h-fit">
+                  <li class="w-full h-fit md:flex md:justify-center">
                     <span class="font-Estedad-Medium text-stone-300">
                       درباره ما
                     </span>
@@ -5607,7 +6347,9 @@
 
               <!--------------------- Input Start --------------------->
 
-              <li class="w-fit h-fit col-span-2 flex flex-col gap-y-3">
+              <li
+                class="w-fit h-fit col-span-2 md:col-span-1 flex flex-col gap-y-3"
+              >
                 <span class="font-Estedad-Medium text-stone-300">خبرنامه</span>
                 <div class="max-w-sm w-full space-y-3">
                   <label for="input-base" class="sr-only">Name</label>
@@ -5659,7 +6401,7 @@
     <!--------------------- md:Chat-Support End --------------------->
 
     <div
-      class="w-15 h-15 bg-stone-300 rounded-full fixed md:bottom-15 left-5 z-50 hidden md:flex lg:bottom-5"
+      class="w-15 h-15 bg-stone-300 rounded-full fixed bottom-18 left-3 lg:left-5 z-50 hidden md:flex lg:bottom-5"
     >
       <!--------------------- Ring --------------------->
 
