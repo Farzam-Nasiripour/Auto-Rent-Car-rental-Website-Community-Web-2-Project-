@@ -252,3 +252,13 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 /*--------------------- swiper-2 End --------------------- */
+
+
+@keyframes marquee-x-2 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(1600px);
+  }
+}
