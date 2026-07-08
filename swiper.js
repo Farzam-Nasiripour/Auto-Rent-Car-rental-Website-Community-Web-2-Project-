@@ -38,4 +38,19 @@ var swiper_3 = new Swiper(".mySwiper_3", {
     },
   },
 });
-// ///////////////////////////////////////////////// //
+// //////////////////// swiper-4 /////////////////// //
+const swiper_4 = new Swiper(".mySwiper_4", {
+  loop: true,
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+
+const swiper_4_main = new Swiper(".mySwiper2_4", {
+  loop: true,
+  spaceBetween: 10,
+  thumbs: {
+    swiper: swiper_4,
+  },
+});

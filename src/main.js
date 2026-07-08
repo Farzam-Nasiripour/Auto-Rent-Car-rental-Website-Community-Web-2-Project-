@@ -18,6 +18,7 @@
 // });
 
 // ///////////////////////////////////////////////////////////// //
+
 const input = document.getElementById("search");
 const clearBtn = document.getElementById("clear-search");
 
@@ -32,3 +33,65 @@ clearBtn.addEventListener("click", () => {
   clearBtn.classList.add("hidden");
   input.focus();
 });
+
+// ///////////////////////////////////////////////////////////// //
+
+const minRange = document.getElementById("min-range");
+const maxRange = document.getElementById("max-range");
+
+const minValue = document.getElementById("min-value");
+const maxValue = document.getElementById("max-value");
+
+const range = document.getElementById("slider-range");
+
+function updateSlider() {
+  let min = parseInt(minRange.value);
+  let max = parseInt(maxRange.value);
+
+  if (min > max) {
+    min = max;
+    minRange.value = min;
+  }
+
+  if (max < min) {
+    max = min;
+    maxRange.value = max;
+  }
+
+  minValue.textContent = min;
+  maxValue.textContent = max;
+
+  const minPercent = (min / 100) * 100;
+  const maxPercent = (max / 100) * 100;
+
+  range.style.left = minPercent + "%";
+  range.style.width = maxPercent - minPercent + "%";
+}
+
+minRange.addEventListener("input", updateSlider);
+maxRange.addEventListener("input", updateSlider);
+
+updateSlider();
+function formatPrice(price) {
+  return price.toLocaleString("fa-IR") + " تومان";
+}
+
+function updateSlider() {
+  let min = parseInt(minRange.value);
+  let max = parseInt(maxRange.value);
+
+  if (min > max) {
+    min = max;
+    minRange.value = min;
+  }
+
+  if (max < min) {
+    max = min;
+    maxRange.value = max;
+  }
+
+  minValue.textContent = formatPrice(min);
+  maxValue.textContent = formatPrice(max);
+}
+
+// ///////////////////////////////////////////////////////////// //
