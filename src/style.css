@@ -8,8 +8,10 @@
 @source "../node_modules/@preline/select/*.js";
 @import "../node_modules/@preline/select/variants.css";
 @import "../node_modules/@preline/select/theme.css";
+/* ----------- CDN ---------------- */
+@import "https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css";
+@import "https://cdn.jsdelivr.net/npm/preline@4.2.0/src/plugins/accordion/variants.min.css";
 /* ----------------------------- */
-
 @layer base {
   html {
     @apply scroll-smooth;
