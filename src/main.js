@@ -17,6 +17,10 @@
 //   document.querySelector(".line3").classList.toggle("-rotate-45");
 // });
 
+import "../swiper.js";
+
+import "../preline.js";
+
 // ///////////////////////////////////////////////////////////// //
 
 const input = document.getElementById("search");
@@ -42,44 +46,15 @@ const maxRange = document.getElementById("max-range");
 const minValue = document.getElementById("min-value");
 const maxValue = document.getElementById("max-value");
 
-const range = document.getElementById("slider-range");
-
-function updateSlider() {
-  let min = parseInt(minRange.value);
-  let max = parseInt(maxRange.value);
-
-  if (min > max) {
-    min = max;
-    minRange.value = min;
-  }
-
-  if (max < min) {
-    max = min;
-    maxRange.value = max;
-  }
-
-  minValue.textContent = min;
-  maxValue.textContent = max;
-
-  const minPercent = (min / 100) * 100;
-  const maxPercent = (max / 100) * 100;
-
-  range.style.left = minPercent + "%";
-  range.style.width = maxPercent - minPercent + "%";
-}
-
-minRange.addEventListener("input", updateSlider);
-maxRange.addEventListener("input", updateSlider);
-
-updateSlider();
 function formatPrice(price) {
-  return price.toLocaleString("fa-IR") + " تومان";
+  return Number(price).toLocaleString("fa-IR") + " تومان";
 }
 
 function updateSlider() {
-  let min = parseInt(minRange.value);
-  let max = parseInt(maxRange.value);
+  let min = Number(minRange.value);
+  let max = Number(maxRange.value);
 
+  // جلوگیری از رد شدن دو بولت از هم
   if (min > max) {
     min = max;
     minRange.value = min;
@@ -94,4 +69,10 @@ function updateSlider() {
   maxValue.textContent = formatPrice(max);
 }
 
-// ///////////////////////////////////////////////////////////// //
+if (minRange && maxRange && minValue && maxValue) {
+  minRange.addEventListener("input", updateSlider);
+  maxRange.addEventListener("input", updateSlider);
+
+  updateSlider();
+}
+
