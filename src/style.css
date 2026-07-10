@@ -1,4 +1,11 @@
-/* -----------imports----------- */
+/* ----------- CDN ----------- */
+
+@import url(https://cdn.jsdelivr.net/npm/swiper@12/swiper.min.css);
+@import url(https://cdn.jsdelivr.net/npm/preline@4.2.0/src/plugins/accordion/variants.min.css);
+
+/* ----------- CDN ----------- */
+
+/* ----------- imports ----------- */
 @import "tailwindcss";
 @import "./Fonts.module.css";
 @source "../node_modules/preline/dist/*.js";
@@ -8,9 +15,6 @@
 @source "../node_modules/@preline/select/*.js";
 @import "../node_modules/@preline/select/variants.css";
 @import "../node_modules/@preline/select/theme.css";
-/* ----------- CDN ---------------- */
-@import "https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css";
-@import "https://cdn.jsdelivr.net/npm/preline@4.2.0/src/plugins/accordion/variants.min.css";
 /* ----------------------------- */
 @layer base {
   html {
